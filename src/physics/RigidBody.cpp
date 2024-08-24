@@ -31,6 +31,7 @@ glm::mat4 RigidBody::getTransformMatrix() const {
  
     // Apply scaling (assuming rigidBody.scale is a vec3)
     // transform = glm::scale(transform, rigidBody.scale);
+    spdlog::info("Got transformation matrix.");
     log_mat4(transform);
     return transform;
 }

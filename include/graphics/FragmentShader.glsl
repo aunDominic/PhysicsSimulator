@@ -1,9 +1,7 @@
-#version 330 core
+#version 120
 
-in vec3 FragPos;   // Fragment position in world space
-in vec3 Normal;    // Normal vector in world space
-
-out vec4 FragColor;
+varying vec3 FragPos;   // Fragment position in world space
+varying vec3 Normal;    // Normal vector in world space
 
 uniform vec3 lightPos;      // Position of the light source
 uniform vec3 lightColor;    // Color of the light
@@ -26,5 +24,5 @@ void main()
     // Combine the gradient color with the shading effect
     vec3 resultColor = diff * lightColor * gradientColor;
 
-    FragColor = vec4(resultColor, 1.0);
+    gl_FragColor = vec4(resultColor, 1.0);
 }

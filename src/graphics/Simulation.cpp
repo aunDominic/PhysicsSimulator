@@ -22,9 +22,11 @@ void Simulation::initOpenGL() {
         spdlog::error("OpenGL context could not be created! SDL Error: {}\n", SDL_GetError());
         exit(1);
     }
-    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
-    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 3);
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 4);
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 1);
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_FLAGS, SDL_GL_CONTEXT_FORWARD_COMPATIBLE_FLAG);
+
 
     const GLubyte* version = glGetString(GL_VERSION);
     spdlog::info("OpenGL version: {}", reinterpret_cast<const char *>(version));
@@ -71,11 +73,14 @@ void Simulation::update() {
 }
 
 void Simulation::render() {
+    spdlog::info("Rendering graphics models...");
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
     // Render your objects here
     // Render all game objects
     for (const auto& body : system.getBodies()) {
+        spdlog::info("Rendering GeometryType{}", static_cast<int>(body->geometry->getType()));
+
         body->geometry->graphicsModel->render(body->getTransformMatrix());
     }
     

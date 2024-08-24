@@ -20,6 +20,7 @@ public:
 class Geometry {
 public:
     std::unique_ptr<GraphicsModel> graphicsModel;
+    Geometry() {};
     virtual ~Geometry() = default;
     virtual GeometryType getType() const = 0;
     virtual AABB getAABB() const = 0;
@@ -30,7 +31,7 @@ public:
     virtual void transform(const glm::mat4& transformation) = 0;
 
     // Optional method for Geometrys that need vertex representation
-    virtual std::vector<glm::vec3> getVertices() const { return {}; }
+    virtual std::vector<glm::vec3> getVertices() const;
  
 };
 
