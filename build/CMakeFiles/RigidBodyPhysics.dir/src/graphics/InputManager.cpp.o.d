@@ -933,4 +933,243 @@ CMakeFiles/RigidBodyPhysics.dir/src/graphics/InputManager.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/any \
   /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/nlohmann/detail/macro_unscope.hpp \
   /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/nlohmann/thirdparty/hedley/hedley_undef.hpp \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/fstream
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/fstream \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/graphics/Camera.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/glm.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/_fixes.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/setup.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/../simd/platform.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/cfloat \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/float.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/float.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/float.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/fwd.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/qualifier.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/vec2.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/vector_bool2.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/../detail/type_vec2.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/type_vec2.inl \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/./compute_vector_relational.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/vector_bool2_precision.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/vector_float2.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/vector_float2_precision.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/vector_double2.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/vector_double2_precision.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/vector_int2.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/vector_int2_sized.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/../ext/vector_int2.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/../ext/scalar_int_sized.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/../detail/setup.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/vector_uint2.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/vector_uint2_sized.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/../ext/vector_uint2.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/../ext/scalar_uint_sized.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/vec3.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/vector_bool3.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/../detail/type_vec3.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/type_vec3.inl \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/compute_vector_relational.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/compute_vector_decl.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/_vectorize.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/vector_bool3_precision.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/vector_float3.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/vector_float3_precision.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/vector_double3.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/vector_double3_precision.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/vector_int3.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/vector_int3_sized.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/../ext/vector_int3.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/vector_uint3.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/vector_uint3_sized.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/../ext/vector_uint3.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/vec4.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/vector_bool4.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/../detail/type_vec4.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/type_vec4.inl \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/vector_bool4_precision.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/vector_float4.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/vector_float4_precision.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/vector_double4.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/vector_double4_precision.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/vector_int4.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/vector_int4_sized.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/../ext/vector_int4.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/vector_uint4.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/vector_uint4_sized.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/../ext/vector_uint4.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/mat2x2.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_double2x2.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/../detail/type_mat2x2.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/type_vec2.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/type_mat2x2.inl \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/../matrix.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/mat2x3.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_double2x3.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/../detail/type_mat2x3.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/type_vec3.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/type_mat2x3.inl \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_double2x3_precision.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_float2x3.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_float2x3_precision.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/mat2x4.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_double2x4.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/../detail/type_mat2x4.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/type_vec4.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/type_mat2x4.inl \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_double2x4_precision.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_float2x4.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_float2x4_precision.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/mat3x2.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_double3x2.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/../detail/type_mat3x2.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/type_mat3x2.inl \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_double3x2_precision.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_float3x2.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_float3x2_precision.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/mat3x3.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_double3x3.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/../detail/type_mat3x3.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/type_mat3x3.inl \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/../common.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/func_common.inl \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/../vector_relational.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/func_vector_relational.inl \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/compute_common.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/type_vec1.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/type_vec1.inl \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_double3x3_precision.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_float3x3.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_float3x3_precision.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/mat3x4.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_double3x4.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/../detail/type_mat3x4.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/type_mat3x4.inl \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_double3x4_precision.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_float3x4.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_float3x4_precision.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/mat4x2.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_double4x2.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/../detail/type_mat4x2.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/type_mat4x2.inl \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_double4x2_precision.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_float4x2.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_float4x2_precision.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/mat4x3.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_double4x3.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/../detail/type_mat4x3.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/type_mat4x3.inl \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_double4x3_precision.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_float4x3.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_float4x3_precision.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/mat4x4.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_double4x4.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/../detail/type_mat4x4.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/type_mat4x4.inl \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/../geometric.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/func_geometric.inl \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/../exponential.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/func_exponential.inl \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_double4x4_precision.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_float4x4.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_float4x4_precision.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/func_matrix.inl \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_double2x2_precision.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_float2x2.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_float2x2_precision.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/trigonometric.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/func_trigonometric.inl \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/exponential.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/common.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/packing.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/func_packing.inl \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/type_half.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/type_half.inl \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/geometric.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/matrix.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/vector_relational.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/integer.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/detail/func_integer.inl \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/gtc/matrix_transform.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/gtc/../mat4x4.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/gtc/../vec2.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/gtc/../vec3.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/gtc/../vec4.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/gtc/../ext/matrix_projection.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/../gtc/constants.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/gtc/../ext/scalar_constants.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/scalar_constants.inl \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/gtc/constants.inl \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/../geometric.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/../trigonometric.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/../matrix.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_projection.inl \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/gtc/../ext/matrix_clip_space.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/../ext/scalar_constants.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_clip_space.inl \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/gtc/../ext/matrix_transform.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/./ext/matrix_transform.inl \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/gtc/matrix_transform.inl \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/gtc/../geometric.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/gtc/../trigonometric.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/gtc/../matrix.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/spdlog.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/common.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/details/null_mutex.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/tweakme.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/fmt/fmt.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/fmt/bundled/core.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/fmt/bundled/format.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/fmt/bundled/format-inl.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/common-inl.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/details/registry.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/details/periodic_worker.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/condition_variable \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/thread \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/details/periodic_worker-inl.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/details/registry-inl.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/logger.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/details/backtracer.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/details/circular_q.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/details/log_msg_buffer.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/details/log_msg.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/details/log_msg-inl.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/details/os.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/details/os-inl.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/stat.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_s_ifmt.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_filesec_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/fcntl.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/fcntl.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_o_sync.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_o_dsync.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/unistd.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/unistd.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_posix_vdisable.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/select.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_select.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_uuid_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/gethostuuid.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/details/log_msg_buffer-inl.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/details/backtracer-inl.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/logger-inl.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/pattern_formatter.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/formatter.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/pattern_formatter-inl.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/details/fmt_helper.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/mdc.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/sinks/sink.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/sinks/sink-inl.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/sinks/ansicolor_sink.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/details/console_globals.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/sinks/ansicolor_sink-inl.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/details/synchronous_factory.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/version.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/spdlog-inl.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/graphics/utils.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/GL/glew.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/OpenGL.framework/Headers/glu.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/OpenGL.framework/Headers/OpenGLAvailability.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/os/availability.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/iostream \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/sstream

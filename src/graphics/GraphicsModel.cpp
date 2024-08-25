@@ -1,5 +1,6 @@
 #include <graphics/GraphicsModel.hpp>
 #include <spdlog/spdlog.h>
+#include <graphics/utils.hpp>
 namespace aun{
 void GraphicsModel::setShaderProgram(GLuint *shaderProgram){
     this->shaderProgram = shaderProgram;
@@ -28,10 +29,17 @@ void GraphicsModel::initBuffers() {
     glBindVertexArray(VAO);
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
     spdlog::debug("Uploading vertex data...");
+    for (auto x: vertices){
+        std::cout << x << " ";
+    }
     glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(GLfloat), vertices.data(), GL_STATIC_DRAW);
 
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+
     spdlog::debug("Uploading index data...");
+    for (auto x: indices){
+        std::cout << x << " ";
+    }
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, indices.size() * sizeof(GLuint), indices.data(), GL_STATIC_DRAW);
 
     // Set up vertex attributes (position, normal, etc.)
@@ -50,7 +58,6 @@ void GraphicsModel::render(const glm::mat4& transform) {
     // Set the model matrix uniform
     GLuint modelLoc = glGetUniformLocation(*shaderProgram, "model");
     glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(transform));
-
     glBindVertexArray(VAO);
     glDrawElements(GL_TRIANGLES, indices.size(), GL_UNSIGNED_INT, 0);
     glBindVertexArray(0);

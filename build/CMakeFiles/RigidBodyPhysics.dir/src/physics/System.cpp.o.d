@@ -998,4 +998,114 @@ CMakeFiles/RigidBodyPhysics.dir/src/physics/System.cpp.o: \
   /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/gtc/../mat3x4.hpp \
   /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/gtc/../mat4x2.hpp \
   /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/gtc/../mat4x3.hpp \
-  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/gtc/type_ptr.inl
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/gtc/type_ptr.inl \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/spdlog.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/common.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/details/null_mutex.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/tweakme.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/string \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__ios/fpos.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__string/extern_template_lists.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/fmt/fmt.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/fmt/bundled/core.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/fmt/bundled/format.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/system_error \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__errc \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/cerrno \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/fmt/bundled/format-inl.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/locale \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__locale \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/locale.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/locale.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/_locale.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/mutex \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__mutex_base \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/xlocale.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/_xlocale.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/xlocale/_ctype.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/xlocale/__wctype.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/xlocale/_stdio.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/xlocale/_stdlib.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/xlocale/_string.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/xlocale/_time.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/xlocale/_wchar.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/xlocale/_wctype.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/ios \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/streambuf \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/nl_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_u_char.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_u_short.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_u_int.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_caddr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_blkcnt_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_blksize_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_gid_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_in_addr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_in_port_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_ino_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_ino64_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_key_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_nlink_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_useconds_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_suseconds_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_fd_def.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_fd_setsize.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_fd_set.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_fd_clr.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_fd_zero.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_fd_isset.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_fd_copy.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_fsblkcnt_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/_types/_nl_item.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/cstdarg \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/common-inl.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/details/registry.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/details/periodic_worker.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/condition_variable \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/thread \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/details/periodic_worker-inl.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/details/registry-inl.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/logger.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/details/backtracer.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/details/circular_q.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/details/log_msg_buffer.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/details/log_msg.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/details/log_msg-inl.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/details/os.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/details/os-inl.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/stat.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_s_ifmt.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_filesec_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/fcntl.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/fcntl.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_o_sync.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_o_dsync.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/unistd.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/unistd.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_posix_vdisable.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/select.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_select.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/sys/_types/_uuid_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/gethostuuid.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/AvailabilityMacros.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/details/log_msg_buffer-inl.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/details/backtracer-inl.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/logger-inl.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/pattern_formatter.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/formatter.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/pattern_formatter-inl.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/details/fmt_helper.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/mdc.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/map \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__tree \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/sinks/sink.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/sinks/sink-inl.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/sinks/ansicolor_sink.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/details/console_globals.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/sinks/ansicolor_sink-inl.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/details/synchronous_factory.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/version.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/spdlog-inl.h

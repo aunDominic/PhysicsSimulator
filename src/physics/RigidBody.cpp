@@ -1,7 +1,11 @@
 #include <physics/RigidBody.hpp>
 #include <spdlog/spdlog.h>
 #include <graphics/utils.hpp>
-namespace aun{        
+namespace aun{       
+RigidBody::RigidBody(){
+    position = glm::vec3(0);
+    orientation = glm::quat(1.0f, 0.0f, 0.0f, 0.0f);
+} 
 void RigidBody::applyForce(const glm::vec3& force, const glm::vec3& point) {
     this->force += force;
     
@@ -31,8 +35,6 @@ glm::mat4 RigidBody::getTransformMatrix() const {
  
     // Apply scaling (assuming rigidBody.scale is a vec3)
     // transform = glm::scale(transform, rigidBody.scale);
-    spdlog::info("Got transformation matrix.");
-    log_mat4(transform);
     return transform;
 }
 }

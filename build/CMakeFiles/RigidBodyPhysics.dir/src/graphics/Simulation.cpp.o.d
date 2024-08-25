@@ -1199,9 +1199,8 @@ CMakeFiles/RigidBodyPhysics.dir/src/graphics/Simulation.cpp.o: \
   /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/nlohmann/detail/macro_unscope.hpp \
   /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/nlohmann/thirdparty/hedley/hedley_undef.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/fstream \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/iostream \
-  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/graphics/utils.hpp \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/sstream \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/graphics/Camera.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/glm/gtc/matrix_transform.hpp \
   /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/spdlog.h \
   /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/common.h \
   /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/details/null_mutex.h \
@@ -1254,4 +1253,7 @@ CMakeFiles/RigidBodyPhysics.dir/src/graphics/Simulation.cpp.o: \
   /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/sinks/ansicolor_sink-inl.h \
   /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/details/synchronous_factory.h \
   /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/version.h \
-  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/spdlog-inl.h
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/spdlog-inl.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/graphics/utils.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/iostream \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/sstream

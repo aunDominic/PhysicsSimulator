@@ -29,13 +29,8 @@ namespace aun{
         glm::vec3 torque;
 
         // ... constructors and other methods ...
-        RigidBody(){
-            // TODO: NEED TO CALCULATE CENTER OF MASS 
-            
-        }
-        ~RigidBody(){
-
-        }
+        RigidBody();
+        ~RigidBody() = default;
         void applyForce(const glm::vec3& force, const glm::vec3& point= glm::vec3(0,0,0));
 
         void derivativeEvaluation(const glm::vec3& position, const glm::quat& orientation,

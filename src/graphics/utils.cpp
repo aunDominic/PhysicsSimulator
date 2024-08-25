@@ -44,6 +44,9 @@ GLuint createShaderProgram(const char* vertexSourcePath, const char* fragmentSou
     GLuint shaderProgram = glCreateProgram();
     glAttachShader(shaderProgram, vertexShader);
     glAttachShader(shaderProgram, fragmentShader);
+    glBindAttribLocation(shaderProgram, 0, "aPos");    // Bind aPos to location 0
+    glBindAttribLocation(shaderProgram, 1, "aNormal"); // Bind aNormal to location 1
+
     glLinkProgram(shaderProgram);
     
     // Check for linking errors

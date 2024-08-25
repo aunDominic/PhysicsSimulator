@@ -35,7 +35,4 @@ std::vector<glm::vec3> Sphere::getVertices() const  {
     return {}; // Provide an empty default vertex list
 }
 
-Sphere::Sphere() : radius(5), sector(20), stack(15) {
-    // Initialize sphere-specific members
-}
 }

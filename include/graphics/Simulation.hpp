@@ -6,17 +6,25 @@
 #include <graphics/InputManager.hpp>
 #include <iostream>
 #include <graphics/utils.hpp>
+#include <graphics/Camera.hpp>
+#include "spdlog/spdlog.h"
+
 
 namespace aun {
+#define WIDTH  800
+#define HEIGHT 600
+#define FRAGMENT_SHADER_PATH "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /include/graphics/FragmentShader.glsl"
+#define VERTEX_SHADER_PATH "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /include/graphics/VertexShader.glsl"
 
 class Simulation {
 private:
     SDL_Window* window;
     SDL_GLContext glContext;
-    System system;
+    std::unique_ptr<System> system;
     InputManager inputManager;
     GLuint shaderProgram;
-
+    Camera camera;
+    
     bool running;
 
     void initSDL();
@@ -27,9 +35,10 @@ private:
 
 public:
     Simulation();
-    Simulation(System &system, bool running);
+    Simulation(bool running);
     ~Simulation();
     void run();
+    void setSystem(std::unique_ptr<System> system);
 };
 
 }

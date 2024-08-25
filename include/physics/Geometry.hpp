@@ -31,7 +31,7 @@ public:
     virtual void transform(const glm::mat4& transformation) = 0;
 
     // Optional method for Geometrys that need vertex representation
-    virtual std::vector<glm::vec3> getVertices() const;
+    virtual std::vector<glm::vec3> getVertices() const { return {}; };
  
 };
 

@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/RigidBodyPhysics.dir/src/CollisionSystem.cpp.o"
   "CMakeFiles/RigidBodyPhysics.dir/src/CollisionSystem.cpp.o.d"
+  "CMakeFiles/RigidBodyPhysics.dir/src/graphics/Camera.cpp.o"
+  "CMakeFiles/RigidBodyPhysics.dir/src/graphics/Camera.cpp.o.d"
   "CMakeFiles/RigidBodyPhysics.dir/src/graphics/GraphicsModel.cpp.o"
   "CMakeFiles/RigidBodyPhysics.dir/src/graphics/GraphicsModel.cpp.o.d"
   "CMakeFiles/RigidBodyPhysics.dir/src/graphics/InputManager.cpp.o"
@@ -17,6 +19,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/RigidBodyPhysics.dir/src/physics/Ball.cpp.o.d"
   "CMakeFiles/RigidBodyPhysics.dir/src/physics/EulerSolver.cpp.o"
   "CMakeFiles/RigidBodyPhysics.dir/src/physics/EulerSolver.cpp.o.d"
+  "CMakeFiles/RigidBodyPhysics.dir/src/physics/Geometry.cpp.o"
+  "CMakeFiles/RigidBodyPhysics.dir/src/physics/Geometry.cpp.o.d"
   "CMakeFiles/RigidBodyPhysics.dir/src/physics/RigidBody.cpp.o"
   "CMakeFiles/RigidBodyPhysics.dir/src/physics/RigidBody.cpp.o.d"
   "CMakeFiles/RigidBodyPhysics.dir/src/physics/RungeKuttaSolver.cpp.o"

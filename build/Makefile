@@ -153,6 +153,30 @@ src/CollisionSystem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/CollisionSystem.cpp.s
 .PHONY : src/CollisionSystem.cpp.s
 
+src/graphics/Camera.o: src/graphics/Camera.cpp.o
+.PHONY : src/graphics/Camera.o
+
+# target to build an object file
+src/graphics/Camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/graphics/Camera.cpp.o
+.PHONY : src/graphics/Camera.cpp.o
+
+src/graphics/Camera.i: src/graphics/Camera.cpp.i
+.PHONY : src/graphics/Camera.i
+
+# target to preprocess a source file
+src/graphics/Camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/graphics/Camera.cpp.i
+.PHONY : src/graphics/Camera.cpp.i
+
+src/graphics/Camera.s: src/graphics/Camera.cpp.s
+.PHONY : src/graphics/Camera.s
+
+# target to generate assembly for a file
+src/graphics/Camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/graphics/Camera.cpp.s
+.PHONY : src/graphics/Camera.cpp.s
+
 src/graphics/GraphicsModel.o: src/graphics/GraphicsModel.cpp.o
 .PHONY : src/graphics/GraphicsModel.o
 
@@ -345,6 +369,30 @@ src/physics/EulerSolver.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/physics/EulerSolver.cpp.s
 .PHONY : src/physics/EulerSolver.cpp.s
 
+src/physics/Geometry.o: src/physics/Geometry.cpp.o
+.PHONY : src/physics/Geometry.o
+
+# target to build an object file
+src/physics/Geometry.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/physics/Geometry.cpp.o
+.PHONY : src/physics/Geometry.cpp.o
+
+src/physics/Geometry.i: src/physics/Geometry.cpp.i
+.PHONY : src/physics/Geometry.i
+
+# target to preprocess a source file
+src/physics/Geometry.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/physics/Geometry.cpp.i
+.PHONY : src/physics/Geometry.cpp.i
+
+src/physics/Geometry.s: src/physics/Geometry.cpp.s
+.PHONY : src/physics/Geometry.s
+
+# target to generate assembly for a file
+src/physics/Geometry.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/physics/Geometry.cpp.s
+.PHONY : src/physics/Geometry.cpp.s
+
 src/physics/RigidBody.o: src/physics/RigidBody.cpp.o
 .PHONY : src/physics/RigidBody.o
 
@@ -453,6 +501,9 @@ help:
 	@echo "... src/CollisionSystem.o"
 	@echo "... src/CollisionSystem.i"
 	@echo "... src/CollisionSystem.s"
+	@echo "... src/graphics/Camera.o"
+	@echo "... src/graphics/Camera.i"
+	@echo "... src/graphics/Camera.s"
 	@echo "... src/graphics/GraphicsModel.o"
 	@echo "... src/graphics/GraphicsModel.i"
 	@echo "... src/graphics/GraphicsModel.s"
@@ -477,6 +528,9 @@ help:
 	@echo "... src/physics/EulerSolver.o"
 	@echo "... src/physics/EulerSolver.i"
 	@echo "... src/physics/EulerSolver.s"
+	@echo "... src/physics/Geometry.o"
+	@echo "... src/physics/Geometry.i"
+	@echo "... src/physics/Geometry.s"
 	@echo "... src/physics/RigidBody.o"
 	@echo "... src/physics/RigidBody.i"
 	@echo "... src/physics/RigidBody.s"

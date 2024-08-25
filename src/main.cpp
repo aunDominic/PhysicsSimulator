@@ -4,29 +4,23 @@
 #include <physics/RigidBodies.hpp>
 #include <graphics/SphereModel.hpp>
 #include <physics/Sphere.hpp>
-
+#include <graphics/utils.hpp>
 #include <spdlog/spdlog.h>
 #include <spdlog/sinks/basic_file_sink.h>  // for file-based logging
 #include <spdlog/sinks/stdout_color_sinks.h>  // for console logging
 void init_multi_sink_logger(); 
 
-std::ostream& operator<<(std::ostream& os, const glm::mat4& mat) {
-    for (int i = 0; i < 4; ++i) {
-        for (int j = 0; j < 4; ++j) {
-            os << mat[i][j] << " ";
-        }
-        os << "\n";
-    }
-    return os;
-}
 
 
 int main(int argc, char* args[]) {
     init_multi_sink_logger();
 
     std::unique_ptr<aun::ODESolver> solver = std::make_unique<aun::EulerSolver>(); 
-    aun::System BallSystem(1000.0f/60.0f, std::move(solver));
-    aun::Simulation simulation(BallSystem, true); // Passing a pointer to BallSystem
+    std::unique_ptr<aun::System> BallSystem = std::make_unique<aun::System>(1000.0f/60.0f, std::move(solver));
+    if (BallSystem == nullptr) {
+        spdlog::error("BallSystem is null!");
+    }
+    aun::Simulation simulation(true); // Passing a pointer to BallSystem
 
     spdlog::debug("Creating Rigid Body...\n");
     std::unique_ptr<aun::RigidBody> body = std::make_unique<aun::RigidBody>(); 
@@ -37,15 +31,17 @@ int main(int argc, char* args[]) {
     spdlog::debug("Creating Graphics model...\n");
     std::unique_ptr<aun::SphereModel> graphicsModel = std::make_unique<aun::SphereModel>(); 
 
+    spdlog::debug("Sphere coordinates:");
+    aun::log_mat4(body->getTransformMatrix());
     spdlog::debug("Moving Graphics model...\n");
     geometry->graphicsModel = std::move(graphicsModel);
    
     spdlog::debug("Moving Geometry...\n");
     body->geometry = std::move(geometry);
-   
+
     spdlog::debug("Moving Rigid Body...\n");
-    BallSystem.addRigidBody(std::move(body));
-    
+    BallSystem->addRigidBody(std::move(body));
+    simulation.setSystem(std::move(BallSystem));
     simulation.run();
     return 0;
 }
