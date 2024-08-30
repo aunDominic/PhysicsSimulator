@@ -1,3 +1,4 @@
-/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles/RigidBodyPhysics.dir
+/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles/RigidBodySimulation.dir
+/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles/RigidBodyTest.dir
 /Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles/edit_cache.dir
 /Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles/rebuild_cache.dir

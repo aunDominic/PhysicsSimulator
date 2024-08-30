@@ -83,10 +83,24 @@ CMakeFiles/RigidBodyPhysics.dir/src/CollisionSystem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RigidBodyPhysics.dir/src/CollisionSystem.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/CollisionSystem.cpp" -o CMakeFiles/RigidBodyPhysics.dir/src/CollisionSystem.cpp.s
 
+CMakeFiles/RigidBodyPhysics.dir/src/graphics/BoxModel.cpp.o: CMakeFiles/RigidBodyPhysics.dir/flags.make
+CMakeFiles/RigidBodyPhysics.dir/src/graphics/BoxModel.cpp.o: /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /src/graphics/BoxModel.cpp
+CMakeFiles/RigidBodyPhysics.dir/src/graphics/BoxModel.cpp.o: CMakeFiles/RigidBodyPhysics.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/RigidBodyPhysics.dir/src/graphics/BoxModel.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RigidBodyPhysics.dir/src/graphics/BoxModel.cpp.o -MF CMakeFiles/RigidBodyPhysics.dir/src/graphics/BoxModel.cpp.o.d -o CMakeFiles/RigidBodyPhysics.dir/src/graphics/BoxModel.cpp.o -c "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/graphics/BoxModel.cpp"
+
+CMakeFiles/RigidBodyPhysics.dir/src/graphics/BoxModel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RigidBodyPhysics.dir/src/graphics/BoxModel.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/graphics/BoxModel.cpp" > CMakeFiles/RigidBodyPhysics.dir/src/graphics/BoxModel.cpp.i
+
+CMakeFiles/RigidBodyPhysics.dir/src/graphics/BoxModel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RigidBodyPhysics.dir/src/graphics/BoxModel.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/graphics/BoxModel.cpp" -o CMakeFiles/RigidBodyPhysics.dir/src/graphics/BoxModel.cpp.s
+
 CMakeFiles/RigidBodyPhysics.dir/src/graphics/Camera.cpp.o: CMakeFiles/RigidBodyPhysics.dir/flags.make
 CMakeFiles/RigidBodyPhysics.dir/src/graphics/Camera.cpp.o: /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /src/graphics/Camera.cpp
 CMakeFiles/RigidBodyPhysics.dir/src/graphics/Camera.cpp.o: CMakeFiles/RigidBodyPhysics.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/RigidBodyPhysics.dir/src/graphics/Camera.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/RigidBodyPhysics.dir/src/graphics/Camera.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RigidBodyPhysics.dir/src/graphics/Camera.cpp.o -MF CMakeFiles/RigidBodyPhysics.dir/src/graphics/Camera.cpp.o.d -o CMakeFiles/RigidBodyPhysics.dir/src/graphics/Camera.cpp.o -c "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/graphics/Camera.cpp"
 
 CMakeFiles/RigidBodyPhysics.dir/src/graphics/Camera.cpp.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/RigidBodyPhysics.dir/src/graphics/Camera.cpp.s: cmake_force
 CMakeFiles/RigidBodyPhysics.dir/src/graphics/GraphicsModel.cpp.o: CMakeFiles/RigidBodyPhysics.dir/flags.make
 CMakeFiles/RigidBodyPhysics.dir/src/graphics/GraphicsModel.cpp.o: /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /src/graphics/GraphicsModel.cpp
 CMakeFiles/RigidBodyPhysics.dir/src/graphics/GraphicsModel.cpp.o: CMakeFiles/RigidBodyPhysics.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/RigidBodyPhysics.dir/src/graphics/GraphicsModel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RigidBodyPhysics.dir/src/graphics/GraphicsModel.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RigidBodyPhysics.dir/src/graphics/GraphicsModel.cpp.o -MF CMakeFiles/RigidBodyPhysics.dir/src/graphics/GraphicsModel.cpp.o.d -o CMakeFiles/RigidBodyPhysics.dir/src/graphics/GraphicsModel.cpp.o -c "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/graphics/GraphicsModel.cpp"
 
 CMakeFiles/RigidBodyPhysics.dir/src/graphics/GraphicsModel.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/RigidBodyPhysics.dir/src/graphics/GraphicsModel.cpp.s: cmake_force
 CMakeFiles/RigidBodyPhysics.dir/src/graphics/InputManager.cpp.o: CMakeFiles/RigidBodyPhysics.dir/flags.make
 CMakeFiles/RigidBodyPhysics.dir/src/graphics/InputManager.cpp.o: /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /src/graphics/InputManager.cpp
 CMakeFiles/RigidBodyPhysics.dir/src/graphics/InputManager.cpp.o: CMakeFiles/RigidBodyPhysics.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RigidBodyPhysics.dir/src/graphics/InputManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RigidBodyPhysics.dir/src/graphics/InputManager.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RigidBodyPhysics.dir/src/graphics/InputManager.cpp.o -MF CMakeFiles/RigidBodyPhysics.dir/src/graphics/InputManager.cpp.o.d -o CMakeFiles/RigidBodyPhysics.dir/src/graphics/InputManager.cpp.o -c "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/graphics/InputManager.cpp"
 
 CMakeFiles/RigidBodyPhysics.dir/src/graphics/InputManager.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/RigidBodyPhysics.dir/src/graphics/InputManager.cpp.s: cmake_force
 CMakeFiles/RigidBodyPhysics.dir/src/graphics/Simulation.cpp.o: CMakeFiles/RigidBodyPhysics.dir/flags.make
 CMakeFiles/RigidBodyPhysics.dir/src/graphics/Simulation.cpp.o: /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /src/graphics/Simulation.cpp
 CMakeFiles/RigidBodyPhysics.dir/src/graphics/Simulation.cpp.o: CMakeFiles/RigidBodyPhysics.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RigidBodyPhysics.dir/src/graphics/Simulation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RigidBodyPhysics.dir/src/graphics/Simulation.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RigidBodyPhysics.dir/src/graphics/Simulation.cpp.o -MF CMakeFiles/RigidBodyPhysics.dir/src/graphics/Simulation.cpp.o.d -o CMakeFiles/RigidBodyPhysics.dir/src/graphics/Simulation.cpp.o -c "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/graphics/Simulation.cpp"
 
 CMakeFiles/RigidBodyPhysics.dir/src/graphics/Simulation.cpp.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/RigidBodyPhysics.dir/src/graphics/Simulation.cpp.s: cmake_force
 CMakeFiles/RigidBodyPhysics.dir/src/graphics/SphereModel.cpp.o: CMakeFiles/RigidBodyPhysics.dir/flags.make
 CMakeFiles/RigidBodyPhysics.dir/src/graphics/SphereModel.cpp.o: /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /src/graphics/SphereModel.cpp
 CMakeFiles/RigidBodyPhysics.dir/src/graphics/SphereModel.cpp.o: CMakeFiles/RigidBodyPhysics.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RigidBodyPhysics.dir/src/graphics/SphereModel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/RigidBodyPhysics.dir/src/graphics/SphereModel.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RigidBodyPhysics.dir/src/graphics/SphereModel.cpp.o -MF CMakeFiles/RigidBodyPhysics.dir/src/graphics/SphereModel.cpp.o.d -o CMakeFiles/RigidBodyPhysics.dir/src/graphics/SphereModel.cpp.o -c "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/graphics/SphereModel.cpp"
 
 CMakeFiles/RigidBodyPhysics.dir/src/graphics/SphereModel.cpp.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/RigidBodyPhysics.dir/src/graphics/SphereModel.cpp.s: cmake_force
 CMakeFiles/RigidBodyPhysics.dir/src/graphics/utils.cpp.o: CMakeFiles/RigidBodyPhysics.dir/flags.make
 CMakeFiles/RigidBodyPhysics.dir/src/graphics/utils.cpp.o: /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /src/graphics/utils.cpp
 CMakeFiles/RigidBodyPhysics.dir/src/graphics/utils.cpp.o: CMakeFiles/RigidBodyPhysics.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/RigidBodyPhysics.dir/src/graphics/utils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/RigidBodyPhysics.dir/src/graphics/utils.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RigidBodyPhysics.dir/src/graphics/utils.cpp.o -MF CMakeFiles/RigidBodyPhysics.dir/src/graphics/utils.cpp.o.d -o CMakeFiles/RigidBodyPhysics.dir/src/graphics/utils.cpp.o -c "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/graphics/utils.cpp"
 
 CMakeFiles/RigidBodyPhysics.dir/src/graphics/utils.cpp.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/RigidBodyPhysics.dir/src/graphics/utils.cpp.s: cmake_force
 CMakeFiles/RigidBodyPhysics.dir/src/main.cpp.o: CMakeFiles/RigidBodyPhysics.dir/flags.make
 CMakeFiles/RigidBodyPhysics.dir/src/main.cpp.o: /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /src/main.cpp
 CMakeFiles/RigidBodyPhysics.dir/src/main.cpp.o: CMakeFiles/RigidBodyPhysics.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/RigidBodyPhysics.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/RigidBodyPhysics.dir/src/main.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RigidBodyPhysics.dir/src/main.cpp.o -MF CMakeFiles/RigidBodyPhysics.dir/src/main.cpp.o.d -o CMakeFiles/RigidBodyPhysics.dir/src/main.cpp.o -c "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/main.cpp"
 
 CMakeFiles/RigidBodyPhysics.dir/src/main.cpp.i: cmake_force
@@ -184,7 +198,7 @@ CMakeFiles/RigidBodyPhysics.dir/src/main.cpp.s: cmake_force
 CMakeFiles/RigidBodyPhysics.dir/src/physics/Ball.cpp.o: CMakeFiles/RigidBodyPhysics.dir/flags.make
 CMakeFiles/RigidBodyPhysics.dir/src/physics/Ball.cpp.o: /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /src/physics/Ball.cpp
 CMakeFiles/RigidBodyPhysics.dir/src/physics/Ball.cpp.o: CMakeFiles/RigidBodyPhysics.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/RigidBodyPhysics.dir/src/physics/Ball.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/RigidBodyPhysics.dir/src/physics/Ball.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RigidBodyPhysics.dir/src/physics/Ball.cpp.o -MF CMakeFiles/RigidBodyPhysics.dir/src/physics/Ball.cpp.o.d -o CMakeFiles/RigidBodyPhysics.dir/src/physics/Ball.cpp.o -c "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/physics/Ball.cpp"
 
 CMakeFiles/RigidBodyPhysics.dir/src/physics/Ball.cpp.i: cmake_force
@@ -195,10 +209,24 @@ CMakeFiles/RigidBodyPhysics.dir/src/physics/Ball.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RigidBodyPhysics.dir/src/physics/Ball.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/physics/Ball.cpp" -o CMakeFiles/RigidBodyPhysics.dir/src/physics/Ball.cpp.s
 
+CMakeFiles/RigidBodyPhysics.dir/src/physics/BoxGeometry.cpp.o: CMakeFiles/RigidBodyPhysics.dir/flags.make
+CMakeFiles/RigidBodyPhysics.dir/src/physics/BoxGeometry.cpp.o: /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /src/physics/BoxGeometry.cpp
+CMakeFiles/RigidBodyPhysics.dir/src/physics/BoxGeometry.cpp.o: CMakeFiles/RigidBodyPhysics.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/RigidBodyPhysics.dir/src/physics/BoxGeometry.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RigidBodyPhysics.dir/src/physics/BoxGeometry.cpp.o -MF CMakeFiles/RigidBodyPhysics.dir/src/physics/BoxGeometry.cpp.o.d -o CMakeFiles/RigidBodyPhysics.dir/src/physics/BoxGeometry.cpp.o -c "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/physics/BoxGeometry.cpp"
+
+CMakeFiles/RigidBodyPhysics.dir/src/physics/BoxGeometry.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RigidBodyPhysics.dir/src/physics/BoxGeometry.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/physics/BoxGeometry.cpp" > CMakeFiles/RigidBodyPhysics.dir/src/physics/BoxGeometry.cpp.i
+
+CMakeFiles/RigidBodyPhysics.dir/src/physics/BoxGeometry.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RigidBodyPhysics.dir/src/physics/BoxGeometry.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/physics/BoxGeometry.cpp" -o CMakeFiles/RigidBodyPhysics.dir/src/physics/BoxGeometry.cpp.s
+
 CMakeFiles/RigidBodyPhysics.dir/src/physics/EulerSolver.cpp.o: CMakeFiles/RigidBodyPhysics.dir/flags.make
 CMakeFiles/RigidBodyPhysics.dir/src/physics/EulerSolver.cpp.o: /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /src/physics/EulerSolver.cpp
 CMakeFiles/RigidBodyPhysics.dir/src/physics/EulerSolver.cpp.o: CMakeFiles/RigidBodyPhysics.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/RigidBodyPhysics.dir/src/physics/EulerSolver.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/RigidBodyPhysics.dir/src/physics/EulerSolver.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RigidBodyPhysics.dir/src/physics/EulerSolver.cpp.o -MF CMakeFiles/RigidBodyPhysics.dir/src/physics/EulerSolver.cpp.o.d -o CMakeFiles/RigidBodyPhysics.dir/src/physics/EulerSolver.cpp.o -c "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/physics/EulerSolver.cpp"
 
 CMakeFiles/RigidBodyPhysics.dir/src/physics/EulerSolver.cpp.i: cmake_force
@@ -212,7 +240,7 @@ CMakeFiles/RigidBodyPhysics.dir/src/physics/EulerSolver.cpp.s: cmake_force
 CMakeFiles/RigidBodyPhysics.dir/src/physics/Geometry.cpp.o: CMakeFiles/RigidBodyPhysics.dir/flags.make
 CMakeFiles/RigidBodyPhysics.dir/src/physics/Geometry.cpp.o: /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /src/physics/Geometry.cpp
 CMakeFiles/RigidBodyPhysics.dir/src/physics/Geometry.cpp.o: CMakeFiles/RigidBodyPhysics.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/RigidBodyPhysics.dir/src/physics/Geometry.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/RigidBodyPhysics.dir/src/physics/Geometry.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RigidBodyPhysics.dir/src/physics/Geometry.cpp.o -MF CMakeFiles/RigidBodyPhysics.dir/src/physics/Geometry.cpp.o.d -o CMakeFiles/RigidBodyPhysics.dir/src/physics/Geometry.cpp.o -c "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/physics/Geometry.cpp"
 
 CMakeFiles/RigidBodyPhysics.dir/src/physics/Geometry.cpp.i: cmake_force
@@ -226,7 +254,7 @@ CMakeFiles/RigidBodyPhysics.dir/src/physics/Geometry.cpp.s: cmake_force
 CMakeFiles/RigidBodyPhysics.dir/src/physics/RigidBody.cpp.o: CMakeFiles/RigidBodyPhysics.dir/flags.make
 CMakeFiles/RigidBodyPhysics.dir/src/physics/RigidBody.cpp.o: /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /src/physics/RigidBody.cpp
 CMakeFiles/RigidBodyPhysics.dir/src/physics/RigidBody.cpp.o: CMakeFiles/RigidBodyPhysics.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/RigidBodyPhysics.dir/src/physics/RigidBody.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/RigidBodyPhysics.dir/src/physics/RigidBody.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RigidBodyPhysics.dir/src/physics/RigidBody.cpp.o -MF CMakeFiles/RigidBodyPhysics.dir/src/physics/RigidBody.cpp.o.d -o CMakeFiles/RigidBodyPhysics.dir/src/physics/RigidBody.cpp.o -c "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/physics/RigidBody.cpp"
 
 CMakeFiles/RigidBodyPhysics.dir/src/physics/RigidBody.cpp.i: cmake_force
@@ -240,7 +268,7 @@ CMakeFiles/RigidBodyPhysics.dir/src/physics/RigidBody.cpp.s: cmake_force
 CMakeFiles/RigidBodyPhysics.dir/src/physics/RungeKuttaSolver.cpp.o: CMakeFiles/RigidBodyPhysics.dir/flags.make
 CMakeFiles/RigidBodyPhysics.dir/src/physics/RungeKuttaSolver.cpp.o: /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /src/physics/RungeKuttaSolver.cpp
 CMakeFiles/RigidBodyPhysics.dir/src/physics/RungeKuttaSolver.cpp.o: CMakeFiles/RigidBodyPhysics.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/RigidBodyPhysics.dir/src/physics/RungeKuttaSolver.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/RigidBodyPhysics.dir/src/physics/RungeKuttaSolver.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RigidBodyPhysics.dir/src/physics/RungeKuttaSolver.cpp.o -MF CMakeFiles/RigidBodyPhysics.dir/src/physics/RungeKuttaSolver.cpp.o.d -o CMakeFiles/RigidBodyPhysics.dir/src/physics/RungeKuttaSolver.cpp.o -c "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/physics/RungeKuttaSolver.cpp"
 
 CMakeFiles/RigidBodyPhysics.dir/src/physics/RungeKuttaSolver.cpp.i: cmake_force
@@ -254,7 +282,7 @@ CMakeFiles/RigidBodyPhysics.dir/src/physics/RungeKuttaSolver.cpp.s: cmake_force
 CMakeFiles/RigidBodyPhysics.dir/src/physics/Sphere.cpp.o: CMakeFiles/RigidBodyPhysics.dir/flags.make
 CMakeFiles/RigidBodyPhysics.dir/src/physics/Sphere.cpp.o: /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /src/physics/Sphere.cpp
 CMakeFiles/RigidBodyPhysics.dir/src/physics/Sphere.cpp.o: CMakeFiles/RigidBodyPhysics.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/RigidBodyPhysics.dir/src/physics/Sphere.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/RigidBodyPhysics.dir/src/physics/Sphere.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RigidBodyPhysics.dir/src/physics/Sphere.cpp.o -MF CMakeFiles/RigidBodyPhysics.dir/src/physics/Sphere.cpp.o.d -o CMakeFiles/RigidBodyPhysics.dir/src/physics/Sphere.cpp.o -c "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/physics/Sphere.cpp"
 
 CMakeFiles/RigidBodyPhysics.dir/src/physics/Sphere.cpp.i: cmake_force
@@ -265,10 +293,24 @@ CMakeFiles/RigidBodyPhysics.dir/src/physics/Sphere.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RigidBodyPhysics.dir/src/physics/Sphere.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/physics/Sphere.cpp" -o CMakeFiles/RigidBodyPhysics.dir/src/physics/Sphere.cpp.s
 
+CMakeFiles/RigidBodyPhysics.dir/src/physics/StaticBody.cpp.o: CMakeFiles/RigidBodyPhysics.dir/flags.make
+CMakeFiles/RigidBodyPhysics.dir/src/physics/StaticBody.cpp.o: /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /src/physics/StaticBody.cpp
+CMakeFiles/RigidBodyPhysics.dir/src/physics/StaticBody.cpp.o: CMakeFiles/RigidBodyPhysics.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/RigidBodyPhysics.dir/src/physics/StaticBody.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RigidBodyPhysics.dir/src/physics/StaticBody.cpp.o -MF CMakeFiles/RigidBodyPhysics.dir/src/physics/StaticBody.cpp.o.d -o CMakeFiles/RigidBodyPhysics.dir/src/physics/StaticBody.cpp.o -c "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/physics/StaticBody.cpp"
+
+CMakeFiles/RigidBodyPhysics.dir/src/physics/StaticBody.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RigidBodyPhysics.dir/src/physics/StaticBody.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/physics/StaticBody.cpp" > CMakeFiles/RigidBodyPhysics.dir/src/physics/StaticBody.cpp.i
+
+CMakeFiles/RigidBodyPhysics.dir/src/physics/StaticBody.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RigidBodyPhysics.dir/src/physics/StaticBody.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/physics/StaticBody.cpp" -o CMakeFiles/RigidBodyPhysics.dir/src/physics/StaticBody.cpp.s
+
 CMakeFiles/RigidBodyPhysics.dir/src/physics/System.cpp.o: CMakeFiles/RigidBodyPhysics.dir/flags.make
 CMakeFiles/RigidBodyPhysics.dir/src/physics/System.cpp.o: /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /src/physics/System.cpp
 CMakeFiles/RigidBodyPhysics.dir/src/physics/System.cpp.o: CMakeFiles/RigidBodyPhysics.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/RigidBodyPhysics.dir/src/physics/System.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/RigidBodyPhysics.dir/src/physics/System.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RigidBodyPhysics.dir/src/physics/System.cpp.o -MF CMakeFiles/RigidBodyPhysics.dir/src/physics/System.cpp.o.d -o CMakeFiles/RigidBodyPhysics.dir/src/physics/System.cpp.o -c "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/physics/System.cpp"
 
 CMakeFiles/RigidBodyPhysics.dir/src/physics/System.cpp.i: cmake_force
@@ -282,6 +324,7 @@ CMakeFiles/RigidBodyPhysics.dir/src/physics/System.cpp.s: cmake_force
 # Object files for target RigidBodyPhysics
 RigidBodyPhysics_OBJECTS = \
 "CMakeFiles/RigidBodyPhysics.dir/src/CollisionSystem.cpp.o" \
+"CMakeFiles/RigidBodyPhysics.dir/src/graphics/BoxModel.cpp.o" \
 "CMakeFiles/RigidBodyPhysics.dir/src/graphics/Camera.cpp.o" \
 "CMakeFiles/RigidBodyPhysics.dir/src/graphics/GraphicsModel.cpp.o" \
 "CMakeFiles/RigidBodyPhysics.dir/src/graphics/InputManager.cpp.o" \
@@ -290,17 +333,20 @@ RigidBodyPhysics_OBJECTS = \
 "CMakeFiles/RigidBodyPhysics.dir/src/graphics/utils.cpp.o" \
 "CMakeFiles/RigidBodyPhysics.dir/src/main.cpp.o" \
 "CMakeFiles/RigidBodyPhysics.dir/src/physics/Ball.cpp.o" \
+"CMakeFiles/RigidBodyPhysics.dir/src/physics/BoxGeometry.cpp.o" \
 "CMakeFiles/RigidBodyPhysics.dir/src/physics/EulerSolver.cpp.o" \
 "CMakeFiles/RigidBodyPhysics.dir/src/physics/Geometry.cpp.o" \
 "CMakeFiles/RigidBodyPhysics.dir/src/physics/RigidBody.cpp.o" \
 "CMakeFiles/RigidBodyPhysics.dir/src/physics/RungeKuttaSolver.cpp.o" \
 "CMakeFiles/RigidBodyPhysics.dir/src/physics/Sphere.cpp.o" \
+"CMakeFiles/RigidBodyPhysics.dir/src/physics/StaticBody.cpp.o" \
 "CMakeFiles/RigidBodyPhysics.dir/src/physics/System.cpp.o"
 
 # External object files for target RigidBodyPhysics
 RigidBodyPhysics_EXTERNAL_OBJECTS =
 
 RigidBodyPhysics: CMakeFiles/RigidBodyPhysics.dir/src/CollisionSystem.cpp.o
+RigidBodyPhysics: CMakeFiles/RigidBodyPhysics.dir/src/graphics/BoxModel.cpp.o
 RigidBodyPhysics: CMakeFiles/RigidBodyPhysics.dir/src/graphics/Camera.cpp.o
 RigidBodyPhysics: CMakeFiles/RigidBodyPhysics.dir/src/graphics/GraphicsModel.cpp.o
 RigidBodyPhysics: CMakeFiles/RigidBodyPhysics.dir/src/graphics/InputManager.cpp.o
@@ -309,11 +355,13 @@ RigidBodyPhysics: CMakeFiles/RigidBodyPhysics.dir/src/graphics/SphereModel.cpp.o
 RigidBodyPhysics: CMakeFiles/RigidBodyPhysics.dir/src/graphics/utils.cpp.o
 RigidBodyPhysics: CMakeFiles/RigidBodyPhysics.dir/src/main.cpp.o
 RigidBodyPhysics: CMakeFiles/RigidBodyPhysics.dir/src/physics/Ball.cpp.o
+RigidBodyPhysics: CMakeFiles/RigidBodyPhysics.dir/src/physics/BoxGeometry.cpp.o
 RigidBodyPhysics: CMakeFiles/RigidBodyPhysics.dir/src/physics/EulerSolver.cpp.o
 RigidBodyPhysics: CMakeFiles/RigidBodyPhysics.dir/src/physics/Geometry.cpp.o
 RigidBodyPhysics: CMakeFiles/RigidBodyPhysics.dir/src/physics/RigidBody.cpp.o
 RigidBodyPhysics: CMakeFiles/RigidBodyPhysics.dir/src/physics/RungeKuttaSolver.cpp.o
 RigidBodyPhysics: CMakeFiles/RigidBodyPhysics.dir/src/physics/Sphere.cpp.o
+RigidBodyPhysics: CMakeFiles/RigidBodyPhysics.dir/src/physics/StaticBody.cpp.o
 RigidBodyPhysics: CMakeFiles/RigidBodyPhysics.dir/src/physics/System.cpp.o
 RigidBodyPhysics: CMakeFiles/RigidBodyPhysics.dir/build.make
 RigidBodyPhysics: /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/OpenGL.framework
@@ -321,7 +369,7 @@ RigidBodyPhysics: /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /lib
 RigidBodyPhysics: /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /lib/libSDL3.dylib
 RigidBodyPhysics: /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /lib/libspdlog.a
 RigidBodyPhysics: CMakeFiles/RigidBodyPhysics.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable RigidBodyPhysics"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable RigidBodyPhysics"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RigidBodyPhysics.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

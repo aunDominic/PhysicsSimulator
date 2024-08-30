@@ -1,38 +1,81 @@
+// Sphere.cpp
+
 #include <physics/Sphere.hpp>
+#include <graphics/SphereModel.hpp>
+#include <spdlog/spdlog.h>
+#include <glm/gtc/constants.hpp>
+#include <graphics/utils.hpp>
 
+namespace aun {
 
-namespace aun{
+Sphere::Sphere() : radius(1.0f), Geometry(glm::vec3(0.0f)) {
+    graphicsModel = new SphereModel();
 
-GeometryType Sphere::getType() const  {
-    return GeometryType::Sphere; // Provide a default type
+    updateAABB();
 }
 
-AABB Sphere::getAABB() const  {
-    return AABB(); // Provide a default AABB
+Sphere::Sphere(float radius, const glm::vec3& center)
+    : radius(radius), Geometry(center) {
+    graphicsModel = new SphereModel();
+
+    updateAABB();
 }
 
-glm::vec3 Sphere::getSupport(const glm::vec3& direction) const  {
-    return glm::vec3(0.0f); // Provide a default support vector
+GeometryType Sphere::getType() const {
+    return GeometryType::Sphere;
 }
 
-glm::vec3 Sphere::getClosestPoint(const glm::vec3& point) const  {
-    return glm::vec3(0.0f); // Provide a default closest point
+void Sphere::updateAABB() {
+    glm::vec3 radiusVec(radius);
+    aabb = AABB(center - radiusVec, center + radiusVec);
 }
 
-float Sphere::getVolume() const  {
-    return 0.0f; // Provide a default volume
+glm::vec3 Sphere::getSupport(const glm::vec3& direction) const {
+    return center + glm::normalize(direction) * radius;
 }
 
-glm::mat3 Sphere::getInertiaTensor(float mass) const  {
-    return glm::mat3(1.0f); // Provide a default inertia tensor
+glm::vec3 Sphere::getClosestPoint(const glm::vec3& point) const {
+    glm::vec3 dir = point - center;
+    float distance = glm::length(dir);
+    if (distance <= radius) {
+        return point;
+    }
+    return center + (dir / distance) * radius;
 }
 
-void Sphere::transform(const glm::mat4& transformation)  {
-    // No-op: Default implementation does nothing
+float Sphere::getVolume() const {
+    return (4.0f / 3.0f) * glm::pi<float>() * radius * radius * radius;
 }
 
-std::vector<glm::vec3> Sphere::getVertices() const  {
-    return {}; // Provide an empty default vertex list
+glm::mat3 Sphere::getInertiaTensor(float mass) const {
+    float i = 2.0f * mass * radius * radius / 5.0f;
+    return glm::mat3(
+        i, 0, 0,
+        0, i, 0,
+        0, 0, i
+    );
 }
 
+void Sphere::transform(const glm::mat4& transformation) {
+    center = glm::vec3(transformation * glm::vec4(center, 1.0f));
+    updateAABB();
 }
+
+float Sphere::getRadius() const { return radius; }
+
+std::vector<glm::vec3> Sphere::getFaceNormals() const {
+    return {}; // Spheres don't have flat faces
+}
+
+std::vector<glm::vec3> Sphere::getEdges() const {
+    return {}; // Spheres don't have edges
+}
+
+std::vector<glm::vec3> Sphere::getVertices() const {
+    spdlog::debug("TRANSFORM MATRIX FOR vertices");
+    log_mat4(getTransformMatrix());
+    return {getTransformMatrix() * glm::vec4(center, 1.0f)}; // The sphere can be represented by its center for many calculations
+}
+
+
+} // namespace aun

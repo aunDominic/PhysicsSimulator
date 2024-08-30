@@ -8,6 +8,7 @@
 #include <spdlog/spdlog.h>
 #include <string>
 #include <iostream>
+#include <physics/RigidBody.hpp>
 
 namespace aun{
 class InputManager {
@@ -22,8 +23,10 @@ public:
     bool isKeyPressed(const std::string& action) const;
     void loadInputConfig(const std::string& filePath);
     void handleInput(float dt);
-    void handleInput(float dt, aun::Camera& camera);
-    void handleMouseMovement(int xpos, int ypos, aun::Camera& camera);
+    void handleInput(float dt, Camera& camera);
+    void handleInput(float dt, RigidBody *body);
+
+    void handleMouseMovement(int xpos, int ypos, Camera& camera);
     InputManager();
     // Potentially add methods for other input types (mouse, gamepad, etc.)
 };

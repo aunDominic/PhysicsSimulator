@@ -8,23 +8,29 @@
 #include <graphics/utils.hpp>
 #include <graphics/Camera.hpp>
 #include "spdlog/spdlog.h"
-
+#include <graphics/GridModel.hpp>
+#include <physics/CollisionDetector.hpp>
+#include <graphics/SeparatingPlaneModel.hpp>
 
 namespace aun {
 #define WIDTH  800
 #define HEIGHT 600
 #define FRAGMENT_SHADER_PATH "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /include/graphics/FragmentShader.glsl"
 #define VERTEX_SHADER_PATH "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /include/graphics/VertexShader.glsl"
+#define GRID_VERTEX_SHADER_PATH "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /include/graphics/GridVertexShader.glsl"
+#define GRID_FRAGMENT_SHADER_PATH "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /include/graphics/GridFragmentShader.glsl"
 
 class Simulation {
 private:
     SDL_Window* window;
     SDL_GLContext glContext;
-    std::unique_ptr<System> system;
+    System *system;
     InputManager inputManager;
     GLuint shaderProgram;
+    GLuint gridShaderProgram;
     Camera camera;
-    
+    GridModel gridModel;
+    CollisionDetector *collisionDetector = new SATDetector();
     bool running;
 
     void initSDL();
@@ -38,7 +44,7 @@ public:
     Simulation(bool running);
     ~Simulation();
     void run();
-    void setSystem(std::unique_ptr<System> system);
+    void setSystem(System *system);
 };
 
 }

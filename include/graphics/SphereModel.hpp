@@ -10,5 +10,6 @@ class SphereModel : public GraphicsModel{
     public:
         SphereModel(float radius, int sectors, int stacks);
         SphereModel();
+        SphereModel(float radius);
 };
 }

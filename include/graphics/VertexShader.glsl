@@ -1,14 +1,14 @@
-#version 120
+#version 410 core
 
-attribute vec3 aPos;    // Vertex position
-attribute vec3 aNormal; // Vertex normal
+layout(location = 0) in vec3 aPos;    // Vertex position
+layout(location = 1) in vec3 aNormal; // Vertex normal
 
 uniform mat4 model;
 uniform mat4 view;
 uniform mat4 projection;
 
-varying vec3 FragPos;  // Fragment position in world space
-varying vec3 Normal;   // Normal vector in world space
+out vec3 FragPos;  // Fragment position in world space
+out vec3 Normal;   // Normal vector in world space
 
 void main()
 {

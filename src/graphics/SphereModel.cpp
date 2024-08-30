@@ -55,8 +55,13 @@ SphereModel::SphereModel(float radius, int sectors, int stacks) : radius(radius)
    initBuffers(); 
 }
 SphereModel::SphereModel(){
-    spdlog::debug("Constructing SphereModel...");
-    radius = 3; sectors = 20; stacks = 15;
+    radius = 2; sectors = 20; stacks = 15;
+    spdlog::debug("Constructing SphereModel with radius {}.", radius);
+    createSphere();
+    initBuffers(); 
+}
+SphereModel::SphereModel(float radius) : radius(radius){
+    sectors = 20; stacks = 15;
     createSphere();
     initBuffers(); 
 }

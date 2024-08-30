@@ -66,6 +66,7 @@
         "type_traits": "cpp",
         "algorithm": "cpp",
         "regex": "cpp",
-        "fstream": "cpp"
+        "fstream": "cpp",
+        "unordered_set": "cpp"
     }
 }

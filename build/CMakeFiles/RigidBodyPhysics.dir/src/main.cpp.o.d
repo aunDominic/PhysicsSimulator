@@ -1268,4 +1268,6 @@ CMakeFiles/RigidBodyPhysics.dir/src/main.cpp.o: \
   /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/sinks/base_sink-inl.h \
   /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/sinks/basic_file_sink-inl.h \
   /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/sinks/stdout_color_sinks.h \
-  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/sinks/stdout_color_sinks-inl.h
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/spdlog/sinks/stdout_color_sinks-inl.h \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/physics/StaticBody.hpp \
+  /Users/dominic/Desktop/CS\ Projects/Rigid\ Body\ Physics\ /include/physics/BoxGeometry.hpp

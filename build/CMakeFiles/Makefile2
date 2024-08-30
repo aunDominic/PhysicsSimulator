@@ -63,7 +63,8 @@ CMAKE_BINARY_DIR = "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/RigidBodyPhysics.dir/all
+all: CMakeFiles/RigidBodySimulation.dir/all
+all: CMakeFiles/RigidBodyTest.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +72,61 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/RigidBodyPhysics.dir/clean
+clean: CMakeFiles/RigidBodySimulation.dir/clean
+clean: CMakeFiles/RigidBodyTest.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/RigidBodyPhysics.dir
+# Target rules for target CMakeFiles/RigidBodySimulation.dir
 
 # All Build rule for target.
-CMakeFiles/RigidBodyPhysics.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16 "Built target RigidBodyPhysics"
-.PHONY : CMakeFiles/RigidBodyPhysics.dir/all
+CMakeFiles/RigidBodySimulation.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25 "Built target RigidBodySimulation"
+.PHONY : CMakeFiles/RigidBodySimulation.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/RigidBodyPhysics.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" 16
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/RigidBodyPhysics.dir/all
+CMakeFiles/RigidBodySimulation.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" 25
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/RigidBodySimulation.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" 0
-.PHONY : CMakeFiles/RigidBodyPhysics.dir/rule
+.PHONY : CMakeFiles/RigidBodySimulation.dir/rule
 
 # Convenience name for target.
-RigidBodyPhysics: CMakeFiles/RigidBodyPhysics.dir/rule
-.PHONY : RigidBodyPhysics
+RigidBodySimulation: CMakeFiles/RigidBodySimulation.dir/rule
+.PHONY : RigidBodySimulation
 
 # clean rule for target.
-CMakeFiles/RigidBodyPhysics.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/clean
-.PHONY : CMakeFiles/RigidBodyPhysics.dir/clean
+CMakeFiles/RigidBodySimulation.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/clean
+.PHONY : CMakeFiles/RigidBodySimulation.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/RigidBodyTest.dir
+
+# All Build rule for target.
+CMakeFiles/RigidBodyTest.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" --progress-num=26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50 "Built target RigidBodyTest"
+.PHONY : CMakeFiles/RigidBodyTest.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/RigidBodyTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" 25
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/RigidBodyTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /build/CMakeFiles" 0
+.PHONY : CMakeFiles/RigidBodyTest.dir/rule
+
+# Convenience name for target.
+RigidBodyTest: CMakeFiles/RigidBodyTest.dir/rule
+.PHONY : RigidBodyTest
+
+# clean rule for target.
+CMakeFiles/RigidBodyTest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/clean
+.PHONY : CMakeFiles/RigidBodyTest.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

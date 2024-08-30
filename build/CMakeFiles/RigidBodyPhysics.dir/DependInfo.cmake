@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/CollisionSystem.cpp" "CMakeFiles/RigidBodyPhysics.dir/src/CollisionSystem.cpp.o" "gcc" "CMakeFiles/RigidBodyPhysics.dir/src/CollisionSystem.cpp.o.d"
+  "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/graphics/BoxModel.cpp" "CMakeFiles/RigidBodyPhysics.dir/src/graphics/BoxModel.cpp.o" "gcc" "CMakeFiles/RigidBodyPhysics.dir/src/graphics/BoxModel.cpp.o.d"
   "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/graphics/Camera.cpp" "CMakeFiles/RigidBodyPhysics.dir/src/graphics/Camera.cpp.o" "gcc" "CMakeFiles/RigidBodyPhysics.dir/src/graphics/Camera.cpp.o.d"
   "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/graphics/GraphicsModel.cpp" "CMakeFiles/RigidBodyPhysics.dir/src/graphics/GraphicsModel.cpp.o" "gcc" "CMakeFiles/RigidBodyPhysics.dir/src/graphics/GraphicsModel.cpp.o.d"
   "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/graphics/InputManager.cpp" "CMakeFiles/RigidBodyPhysics.dir/src/graphics/InputManager.cpp.o" "gcc" "CMakeFiles/RigidBodyPhysics.dir/src/graphics/InputManager.cpp.o.d"
@@ -17,11 +18,13 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/graphics/utils.cpp" "CMakeFiles/RigidBodyPhysics.dir/src/graphics/utils.cpp.o" "gcc" "CMakeFiles/RigidBodyPhysics.dir/src/graphics/utils.cpp.o.d"
   "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/main.cpp" "CMakeFiles/RigidBodyPhysics.dir/src/main.cpp.o" "gcc" "CMakeFiles/RigidBodyPhysics.dir/src/main.cpp.o.d"
   "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/physics/Ball.cpp" "CMakeFiles/RigidBodyPhysics.dir/src/physics/Ball.cpp.o" "gcc" "CMakeFiles/RigidBodyPhysics.dir/src/physics/Ball.cpp.o.d"
+  "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/physics/BoxGeometry.cpp" "CMakeFiles/RigidBodyPhysics.dir/src/physics/BoxGeometry.cpp.o" "gcc" "CMakeFiles/RigidBodyPhysics.dir/src/physics/BoxGeometry.cpp.o.d"
   "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/physics/EulerSolver.cpp" "CMakeFiles/RigidBodyPhysics.dir/src/physics/EulerSolver.cpp.o" "gcc" "CMakeFiles/RigidBodyPhysics.dir/src/physics/EulerSolver.cpp.o.d"
   "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/physics/Geometry.cpp" "CMakeFiles/RigidBodyPhysics.dir/src/physics/Geometry.cpp.o" "gcc" "CMakeFiles/RigidBodyPhysics.dir/src/physics/Geometry.cpp.o.d"
   "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/physics/RigidBody.cpp" "CMakeFiles/RigidBodyPhysics.dir/src/physics/RigidBody.cpp.o" "gcc" "CMakeFiles/RigidBodyPhysics.dir/src/physics/RigidBody.cpp.o.d"
   "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/physics/RungeKuttaSolver.cpp" "CMakeFiles/RigidBodyPhysics.dir/src/physics/RungeKuttaSolver.cpp.o" "gcc" "CMakeFiles/RigidBodyPhysics.dir/src/physics/RungeKuttaSolver.cpp.o.d"
   "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/physics/Sphere.cpp" "CMakeFiles/RigidBodyPhysics.dir/src/physics/Sphere.cpp.o" "gcc" "CMakeFiles/RigidBodyPhysics.dir/src/physics/Sphere.cpp.o.d"
+  "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/physics/StaticBody.cpp" "CMakeFiles/RigidBodyPhysics.dir/src/physics/StaticBody.cpp.o" "gcc" "CMakeFiles/RigidBodyPhysics.dir/src/physics/StaticBody.cpp.o.d"
   "/Users/dominic/Desktop/CS Projects/Rigid Body Physics /src/physics/System.cpp" "CMakeFiles/RigidBodyPhysics.dir/src/physics/System.cpp.o" "gcc" "CMakeFiles/RigidBodyPhysics.dir/src/physics/System.cpp.o.d"
   )
 

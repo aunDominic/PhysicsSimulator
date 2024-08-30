@@ -117,48 +117,65 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named RigidBodyPhysics
+# Target rules for targets named RigidBodySimulation
 
 # Build rule for target.
-RigidBodyPhysics: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RigidBodyPhysics
-.PHONY : RigidBodyPhysics
+RigidBodySimulation: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RigidBodySimulation
+.PHONY : RigidBodySimulation
 
 # fast build rule for target.
-RigidBodyPhysics/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/build
-.PHONY : RigidBodyPhysics/fast
+RigidBodySimulation/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/build
+.PHONY : RigidBodySimulation/fast
 
-src/CollisionSystem.o: src/CollisionSystem.cpp.o
-.PHONY : src/CollisionSystem.o
+#=============================================================================
+# Target rules for targets named RigidBodyTest
+
+# Build rule for target.
+RigidBodyTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RigidBodyTest
+.PHONY : RigidBodyTest
+
+# fast build rule for target.
+RigidBodyTest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/build
+.PHONY : RigidBodyTest/fast
+
+src/graphics/BoxModel.o: src/graphics/BoxModel.cpp.o
+.PHONY : src/graphics/BoxModel.o
 
 # target to build an object file
-src/CollisionSystem.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/CollisionSystem.cpp.o
-.PHONY : src/CollisionSystem.cpp.o
+src/graphics/BoxModel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/graphics/BoxModel.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/graphics/BoxModel.cpp.o
+.PHONY : src/graphics/BoxModel.cpp.o
 
-src/CollisionSystem.i: src/CollisionSystem.cpp.i
-.PHONY : src/CollisionSystem.i
+src/graphics/BoxModel.i: src/graphics/BoxModel.cpp.i
+.PHONY : src/graphics/BoxModel.i
 
 # target to preprocess a source file
-src/CollisionSystem.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/CollisionSystem.cpp.i
-.PHONY : src/CollisionSystem.cpp.i
+src/graphics/BoxModel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/graphics/BoxModel.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/graphics/BoxModel.cpp.i
+.PHONY : src/graphics/BoxModel.cpp.i
 
-src/CollisionSystem.s: src/CollisionSystem.cpp.s
-.PHONY : src/CollisionSystem.s
+src/graphics/BoxModel.s: src/graphics/BoxModel.cpp.s
+.PHONY : src/graphics/BoxModel.s
 
 # target to generate assembly for a file
-src/CollisionSystem.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/CollisionSystem.cpp.s
-.PHONY : src/CollisionSystem.cpp.s
+src/graphics/BoxModel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/graphics/BoxModel.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/graphics/BoxModel.cpp.s
+.PHONY : src/graphics/BoxModel.cpp.s
 
 src/graphics/Camera.o: src/graphics/Camera.cpp.o
 .PHONY : src/graphics/Camera.o
 
 # target to build an object file
 src/graphics/Camera.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/graphics/Camera.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/graphics/Camera.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/graphics/Camera.cpp.o
 .PHONY : src/graphics/Camera.cpp.o
 
 src/graphics/Camera.i: src/graphics/Camera.cpp.i
@@ -166,7 +183,8 @@ src/graphics/Camera.i: src/graphics/Camera.cpp.i
 
 # target to preprocess a source file
 src/graphics/Camera.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/graphics/Camera.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/graphics/Camera.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/graphics/Camera.cpp.i
 .PHONY : src/graphics/Camera.cpp.i
 
 src/graphics/Camera.s: src/graphics/Camera.cpp.s
@@ -174,7 +192,8 @@ src/graphics/Camera.s: src/graphics/Camera.cpp.s
 
 # target to generate assembly for a file
 src/graphics/Camera.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/graphics/Camera.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/graphics/Camera.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/graphics/Camera.cpp.s
 .PHONY : src/graphics/Camera.cpp.s
 
 src/graphics/GraphicsModel.o: src/graphics/GraphicsModel.cpp.o
@@ -182,7 +201,8 @@ src/graphics/GraphicsModel.o: src/graphics/GraphicsModel.cpp.o
 
 # target to build an object file
 src/graphics/GraphicsModel.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/graphics/GraphicsModel.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/graphics/GraphicsModel.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/graphics/GraphicsModel.cpp.o
 .PHONY : src/graphics/GraphicsModel.cpp.o
 
 src/graphics/GraphicsModel.i: src/graphics/GraphicsModel.cpp.i
@@ -190,7 +210,8 @@ src/graphics/GraphicsModel.i: src/graphics/GraphicsModel.cpp.i
 
 # target to preprocess a source file
 src/graphics/GraphicsModel.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/graphics/GraphicsModel.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/graphics/GraphicsModel.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/graphics/GraphicsModel.cpp.i
 .PHONY : src/graphics/GraphicsModel.cpp.i
 
 src/graphics/GraphicsModel.s: src/graphics/GraphicsModel.cpp.s
@@ -198,15 +219,44 @@ src/graphics/GraphicsModel.s: src/graphics/GraphicsModel.cpp.s
 
 # target to generate assembly for a file
 src/graphics/GraphicsModel.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/graphics/GraphicsModel.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/graphics/GraphicsModel.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/graphics/GraphicsModel.cpp.s
 .PHONY : src/graphics/GraphicsModel.cpp.s
+
+src/graphics/GridModel.o: src/graphics/GridModel.cpp.o
+.PHONY : src/graphics/GridModel.o
+
+# target to build an object file
+src/graphics/GridModel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/graphics/GridModel.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/graphics/GridModel.cpp.o
+.PHONY : src/graphics/GridModel.cpp.o
+
+src/graphics/GridModel.i: src/graphics/GridModel.cpp.i
+.PHONY : src/graphics/GridModel.i
+
+# target to preprocess a source file
+src/graphics/GridModel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/graphics/GridModel.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/graphics/GridModel.cpp.i
+.PHONY : src/graphics/GridModel.cpp.i
+
+src/graphics/GridModel.s: src/graphics/GridModel.cpp.s
+.PHONY : src/graphics/GridModel.s
+
+# target to generate assembly for a file
+src/graphics/GridModel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/graphics/GridModel.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/graphics/GridModel.cpp.s
+.PHONY : src/graphics/GridModel.cpp.s
 
 src/graphics/InputManager.o: src/graphics/InputManager.cpp.o
 .PHONY : src/graphics/InputManager.o
 
 # target to build an object file
 src/graphics/InputManager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/graphics/InputManager.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/graphics/InputManager.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/graphics/InputManager.cpp.o
 .PHONY : src/graphics/InputManager.cpp.o
 
 src/graphics/InputManager.i: src/graphics/InputManager.cpp.i
@@ -214,7 +264,8 @@ src/graphics/InputManager.i: src/graphics/InputManager.cpp.i
 
 # target to preprocess a source file
 src/graphics/InputManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/graphics/InputManager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/graphics/InputManager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/graphics/InputManager.cpp.i
 .PHONY : src/graphics/InputManager.cpp.i
 
 src/graphics/InputManager.s: src/graphics/InputManager.cpp.s
@@ -222,15 +273,44 @@ src/graphics/InputManager.s: src/graphics/InputManager.cpp.s
 
 # target to generate assembly for a file
 src/graphics/InputManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/graphics/InputManager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/graphics/InputManager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/graphics/InputManager.cpp.s
 .PHONY : src/graphics/InputManager.cpp.s
+
+src/graphics/SeparatingPlaneModel.o: src/graphics/SeparatingPlaneModel.cpp.o
+.PHONY : src/graphics/SeparatingPlaneModel.o
+
+# target to build an object file
+src/graphics/SeparatingPlaneModel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/graphics/SeparatingPlaneModel.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/graphics/SeparatingPlaneModel.cpp.o
+.PHONY : src/graphics/SeparatingPlaneModel.cpp.o
+
+src/graphics/SeparatingPlaneModel.i: src/graphics/SeparatingPlaneModel.cpp.i
+.PHONY : src/graphics/SeparatingPlaneModel.i
+
+# target to preprocess a source file
+src/graphics/SeparatingPlaneModel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/graphics/SeparatingPlaneModel.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/graphics/SeparatingPlaneModel.cpp.i
+.PHONY : src/graphics/SeparatingPlaneModel.cpp.i
+
+src/graphics/SeparatingPlaneModel.s: src/graphics/SeparatingPlaneModel.cpp.s
+.PHONY : src/graphics/SeparatingPlaneModel.s
+
+# target to generate assembly for a file
+src/graphics/SeparatingPlaneModel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/graphics/SeparatingPlaneModel.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/graphics/SeparatingPlaneModel.cpp.s
+.PHONY : src/graphics/SeparatingPlaneModel.cpp.s
 
 src/graphics/Simulation.o: src/graphics/Simulation.cpp.o
 .PHONY : src/graphics/Simulation.o
 
 # target to build an object file
 src/graphics/Simulation.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/graphics/Simulation.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/graphics/Simulation.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/graphics/Simulation.cpp.o
 .PHONY : src/graphics/Simulation.cpp.o
 
 src/graphics/Simulation.i: src/graphics/Simulation.cpp.i
@@ -238,7 +318,8 @@ src/graphics/Simulation.i: src/graphics/Simulation.cpp.i
 
 # target to preprocess a source file
 src/graphics/Simulation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/graphics/Simulation.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/graphics/Simulation.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/graphics/Simulation.cpp.i
 .PHONY : src/graphics/Simulation.cpp.i
 
 src/graphics/Simulation.s: src/graphics/Simulation.cpp.s
@@ -246,7 +327,8 @@ src/graphics/Simulation.s: src/graphics/Simulation.cpp.s
 
 # target to generate assembly for a file
 src/graphics/Simulation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/graphics/Simulation.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/graphics/Simulation.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/graphics/Simulation.cpp.s
 .PHONY : src/graphics/Simulation.cpp.s
 
 src/graphics/SphereModel.o: src/graphics/SphereModel.cpp.o
@@ -254,7 +336,8 @@ src/graphics/SphereModel.o: src/graphics/SphereModel.cpp.o
 
 # target to build an object file
 src/graphics/SphereModel.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/graphics/SphereModel.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/graphics/SphereModel.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/graphics/SphereModel.cpp.o
 .PHONY : src/graphics/SphereModel.cpp.o
 
 src/graphics/SphereModel.i: src/graphics/SphereModel.cpp.i
@@ -262,7 +345,8 @@ src/graphics/SphereModel.i: src/graphics/SphereModel.cpp.i
 
 # target to preprocess a source file
 src/graphics/SphereModel.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/graphics/SphereModel.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/graphics/SphereModel.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/graphics/SphereModel.cpp.i
 .PHONY : src/graphics/SphereModel.cpp.i
 
 src/graphics/SphereModel.s: src/graphics/SphereModel.cpp.s
@@ -270,7 +354,8 @@ src/graphics/SphereModel.s: src/graphics/SphereModel.cpp.s
 
 # target to generate assembly for a file
 src/graphics/SphereModel.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/graphics/SphereModel.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/graphics/SphereModel.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/graphics/SphereModel.cpp.s
 .PHONY : src/graphics/SphereModel.cpp.s
 
 src/graphics/utils.o: src/graphics/utils.cpp.o
@@ -278,7 +363,8 @@ src/graphics/utils.o: src/graphics/utils.cpp.o
 
 # target to build an object file
 src/graphics/utils.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/graphics/utils.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/graphics/utils.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/graphics/utils.cpp.o
 .PHONY : src/graphics/utils.cpp.o
 
 src/graphics/utils.i: src/graphics/utils.cpp.i
@@ -286,7 +372,8 @@ src/graphics/utils.i: src/graphics/utils.cpp.i
 
 # target to preprocess a source file
 src/graphics/utils.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/graphics/utils.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/graphics/utils.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/graphics/utils.cpp.i
 .PHONY : src/graphics/utils.cpp.i
 
 src/graphics/utils.s: src/graphics/utils.cpp.s
@@ -294,39 +381,119 @@ src/graphics/utils.s: src/graphics/utils.cpp.s
 
 # target to generate assembly for a file
 src/graphics/utils.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/graphics/utils.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/graphics/utils.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/graphics/utils.cpp.s
 .PHONY : src/graphics/utils.cpp.s
 
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
+src/main_ode_test.o: src/main_ode_test.cpp.o
+.PHONY : src/main_ode_test.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+src/main_ode_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/main_ode_test.cpp.o
+.PHONY : src/main_ode_test.cpp.o
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+src/main_ode_test.i: src/main_ode_test.cpp.i
+.PHONY : src/main_ode_test.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/main_ode_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/main_ode_test.cpp.i
+.PHONY : src/main_ode_test.cpp.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+src/main_ode_test.s: src/main_ode_test.cpp.s
+.PHONY : src/main_ode_test.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/main_ode_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/main_ode_test.cpp.s
+.PHONY : src/main_ode_test.cpp.s
+
+src/main_simulation.o: src/main_simulation.cpp.o
+.PHONY : src/main_simulation.o
+
+# target to build an object file
+src/main_simulation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/main_simulation.cpp.o
+.PHONY : src/main_simulation.cpp.o
+
+src/main_simulation.i: src/main_simulation.cpp.i
+.PHONY : src/main_simulation.i
+
+# target to preprocess a source file
+src/main_simulation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/main_simulation.cpp.i
+.PHONY : src/main_simulation.cpp.i
+
+src/main_simulation.s: src/main_simulation.cpp.s
+.PHONY : src/main_simulation.s
+
+# target to generate assembly for a file
+src/main_simulation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/main_simulation.cpp.s
+.PHONY : src/main_simulation.cpp.s
+
+src/physics/AABB.o: src/physics/AABB.cpp.o
+.PHONY : src/physics/AABB.o
+
+# target to build an object file
+src/physics/AABB.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/AABB.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/AABB.cpp.o
+.PHONY : src/physics/AABB.cpp.o
+
+src/physics/AABB.i: src/physics/AABB.cpp.i
+.PHONY : src/physics/AABB.i
+
+# target to preprocess a source file
+src/physics/AABB.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/AABB.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/AABB.cpp.i
+.PHONY : src/physics/AABB.cpp.i
+
+src/physics/AABB.s: src/physics/AABB.cpp.s
+.PHONY : src/physics/AABB.s
+
+# target to generate assembly for a file
+src/physics/AABB.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/AABB.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/AABB.cpp.s
+.PHONY : src/physics/AABB.cpp.s
+
+src/physics/AABBTree.o: src/physics/AABBTree.cpp.o
+.PHONY : src/physics/AABBTree.o
+
+# target to build an object file
+src/physics/AABBTree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/AABBTree.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/AABBTree.cpp.o
+.PHONY : src/physics/AABBTree.cpp.o
+
+src/physics/AABBTree.i: src/physics/AABBTree.cpp.i
+.PHONY : src/physics/AABBTree.i
+
+# target to preprocess a source file
+src/physics/AABBTree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/AABBTree.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/AABBTree.cpp.i
+.PHONY : src/physics/AABBTree.cpp.i
+
+src/physics/AABBTree.s: src/physics/AABBTree.cpp.s
+.PHONY : src/physics/AABBTree.s
+
+# target to generate assembly for a file
+src/physics/AABBTree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/AABBTree.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/AABBTree.cpp.s
+.PHONY : src/physics/AABBTree.cpp.s
 
 src/physics/Ball.o: src/physics/Ball.cpp.o
 .PHONY : src/physics/Ball.o
 
 # target to build an object file
 src/physics/Ball.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/physics/Ball.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/Ball.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/Ball.cpp.o
 .PHONY : src/physics/Ball.cpp.o
 
 src/physics/Ball.i: src/physics/Ball.cpp.i
@@ -334,7 +501,8 @@ src/physics/Ball.i: src/physics/Ball.cpp.i
 
 # target to preprocess a source file
 src/physics/Ball.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/physics/Ball.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/Ball.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/Ball.cpp.i
 .PHONY : src/physics/Ball.cpp.i
 
 src/physics/Ball.s: src/physics/Ball.cpp.s
@@ -342,15 +510,44 @@ src/physics/Ball.s: src/physics/Ball.cpp.s
 
 # target to generate assembly for a file
 src/physics/Ball.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/physics/Ball.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/Ball.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/Ball.cpp.s
 .PHONY : src/physics/Ball.cpp.s
+
+src/physics/BoxGeometry.o: src/physics/BoxGeometry.cpp.o
+.PHONY : src/physics/BoxGeometry.o
+
+# target to build an object file
+src/physics/BoxGeometry.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/BoxGeometry.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/BoxGeometry.cpp.o
+.PHONY : src/physics/BoxGeometry.cpp.o
+
+src/physics/BoxGeometry.i: src/physics/BoxGeometry.cpp.i
+.PHONY : src/physics/BoxGeometry.i
+
+# target to preprocess a source file
+src/physics/BoxGeometry.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/BoxGeometry.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/BoxGeometry.cpp.i
+.PHONY : src/physics/BoxGeometry.cpp.i
+
+src/physics/BoxGeometry.s: src/physics/BoxGeometry.cpp.s
+.PHONY : src/physics/BoxGeometry.s
+
+# target to generate assembly for a file
+src/physics/BoxGeometry.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/BoxGeometry.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/BoxGeometry.cpp.s
+.PHONY : src/physics/BoxGeometry.cpp.s
 
 src/physics/EulerSolver.o: src/physics/EulerSolver.cpp.o
 .PHONY : src/physics/EulerSolver.o
 
 # target to build an object file
 src/physics/EulerSolver.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/physics/EulerSolver.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/EulerSolver.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/EulerSolver.cpp.o
 .PHONY : src/physics/EulerSolver.cpp.o
 
 src/physics/EulerSolver.i: src/physics/EulerSolver.cpp.i
@@ -358,7 +555,8 @@ src/physics/EulerSolver.i: src/physics/EulerSolver.cpp.i
 
 # target to preprocess a source file
 src/physics/EulerSolver.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/physics/EulerSolver.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/EulerSolver.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/EulerSolver.cpp.i
 .PHONY : src/physics/EulerSolver.cpp.i
 
 src/physics/EulerSolver.s: src/physics/EulerSolver.cpp.s
@@ -366,7 +564,8 @@ src/physics/EulerSolver.s: src/physics/EulerSolver.cpp.s
 
 # target to generate assembly for a file
 src/physics/EulerSolver.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/physics/EulerSolver.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/EulerSolver.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/EulerSolver.cpp.s
 .PHONY : src/physics/EulerSolver.cpp.s
 
 src/physics/Geometry.o: src/physics/Geometry.cpp.o
@@ -374,7 +573,8 @@ src/physics/Geometry.o: src/physics/Geometry.cpp.o
 
 # target to build an object file
 src/physics/Geometry.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/physics/Geometry.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/Geometry.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/Geometry.cpp.o
 .PHONY : src/physics/Geometry.cpp.o
 
 src/physics/Geometry.i: src/physics/Geometry.cpp.i
@@ -382,7 +582,8 @@ src/physics/Geometry.i: src/physics/Geometry.cpp.i
 
 # target to preprocess a source file
 src/physics/Geometry.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/physics/Geometry.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/Geometry.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/Geometry.cpp.i
 .PHONY : src/physics/Geometry.cpp.i
 
 src/physics/Geometry.s: src/physics/Geometry.cpp.s
@@ -390,7 +591,8 @@ src/physics/Geometry.s: src/physics/Geometry.cpp.s
 
 # target to generate assembly for a file
 src/physics/Geometry.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/physics/Geometry.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/Geometry.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/Geometry.cpp.s
 .PHONY : src/physics/Geometry.cpp.s
 
 src/physics/RigidBody.o: src/physics/RigidBody.cpp.o
@@ -398,7 +600,8 @@ src/physics/RigidBody.o: src/physics/RigidBody.cpp.o
 
 # target to build an object file
 src/physics/RigidBody.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/physics/RigidBody.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/RigidBody.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/RigidBody.cpp.o
 .PHONY : src/physics/RigidBody.cpp.o
 
 src/physics/RigidBody.i: src/physics/RigidBody.cpp.i
@@ -406,7 +609,8 @@ src/physics/RigidBody.i: src/physics/RigidBody.cpp.i
 
 # target to preprocess a source file
 src/physics/RigidBody.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/physics/RigidBody.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/RigidBody.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/RigidBody.cpp.i
 .PHONY : src/physics/RigidBody.cpp.i
 
 src/physics/RigidBody.s: src/physics/RigidBody.cpp.s
@@ -414,7 +618,8 @@ src/physics/RigidBody.s: src/physics/RigidBody.cpp.s
 
 # target to generate assembly for a file
 src/physics/RigidBody.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/physics/RigidBody.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/RigidBody.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/RigidBody.cpp.s
 .PHONY : src/physics/RigidBody.cpp.s
 
 src/physics/RungeKuttaSolver.o: src/physics/RungeKuttaSolver.cpp.o
@@ -422,7 +627,8 @@ src/physics/RungeKuttaSolver.o: src/physics/RungeKuttaSolver.cpp.o
 
 # target to build an object file
 src/physics/RungeKuttaSolver.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/physics/RungeKuttaSolver.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/RungeKuttaSolver.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/RungeKuttaSolver.cpp.o
 .PHONY : src/physics/RungeKuttaSolver.cpp.o
 
 src/physics/RungeKuttaSolver.i: src/physics/RungeKuttaSolver.cpp.i
@@ -430,7 +636,8 @@ src/physics/RungeKuttaSolver.i: src/physics/RungeKuttaSolver.cpp.i
 
 # target to preprocess a source file
 src/physics/RungeKuttaSolver.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/physics/RungeKuttaSolver.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/RungeKuttaSolver.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/RungeKuttaSolver.cpp.i
 .PHONY : src/physics/RungeKuttaSolver.cpp.i
 
 src/physics/RungeKuttaSolver.s: src/physics/RungeKuttaSolver.cpp.s
@@ -438,15 +645,71 @@ src/physics/RungeKuttaSolver.s: src/physics/RungeKuttaSolver.cpp.s
 
 # target to generate assembly for a file
 src/physics/RungeKuttaSolver.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/physics/RungeKuttaSolver.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/RungeKuttaSolver.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/RungeKuttaSolver.cpp.s
 .PHONY : src/physics/RungeKuttaSolver.cpp.s
+
+src/physics/SATCollisionDetector.o: src/physics/SATCollisionDetector.cpp.o
+.PHONY : src/physics/SATCollisionDetector.o
+
+# target to build an object file
+src/physics/SATCollisionDetector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/SATCollisionDetector.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/SATCollisionDetector.cpp.o
+.PHONY : src/physics/SATCollisionDetector.cpp.o
+
+src/physics/SATCollisionDetector.i: src/physics/SATCollisionDetector.cpp.i
+.PHONY : src/physics/SATCollisionDetector.i
+
+# target to preprocess a source file
+src/physics/SATCollisionDetector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/SATCollisionDetector.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/SATCollisionDetector.cpp.i
+.PHONY : src/physics/SATCollisionDetector.cpp.i
+
+src/physics/SATCollisionDetector.s: src/physics/SATCollisionDetector.cpp.s
+.PHONY : src/physics/SATCollisionDetector.s
+
+# target to generate assembly for a file
+src/physics/SATCollisionDetector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/SATCollisionDetector.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/SATCollisionDetector.cpp.s
+.PHONY : src/physics/SATCollisionDetector.cpp.s
+
+src/physics/Solvers.o: src/physics/Solvers.cpp.o
+.PHONY : src/physics/Solvers.o
+
+# target to build an object file
+src/physics/Solvers.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/Solvers.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/Solvers.cpp.o
+.PHONY : src/physics/Solvers.cpp.o
+
+src/physics/Solvers.i: src/physics/Solvers.cpp.i
+.PHONY : src/physics/Solvers.i
+
+# target to preprocess a source file
+src/physics/Solvers.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/Solvers.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/Solvers.cpp.i
+.PHONY : src/physics/Solvers.cpp.i
+
+src/physics/Solvers.s: src/physics/Solvers.cpp.s
+.PHONY : src/physics/Solvers.s
+
+# target to generate assembly for a file
+src/physics/Solvers.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/Solvers.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/Solvers.cpp.s
+.PHONY : src/physics/Solvers.cpp.s
 
 src/physics/Sphere.o: src/physics/Sphere.cpp.o
 .PHONY : src/physics/Sphere.o
 
 # target to build an object file
 src/physics/Sphere.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/physics/Sphere.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/Sphere.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/Sphere.cpp.o
 .PHONY : src/physics/Sphere.cpp.o
 
 src/physics/Sphere.i: src/physics/Sphere.cpp.i
@@ -454,7 +717,8 @@ src/physics/Sphere.i: src/physics/Sphere.cpp.i
 
 # target to preprocess a source file
 src/physics/Sphere.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/physics/Sphere.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/Sphere.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/Sphere.cpp.i
 .PHONY : src/physics/Sphere.cpp.i
 
 src/physics/Sphere.s: src/physics/Sphere.cpp.s
@@ -462,15 +726,44 @@ src/physics/Sphere.s: src/physics/Sphere.cpp.s
 
 # target to generate assembly for a file
 src/physics/Sphere.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/physics/Sphere.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/Sphere.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/Sphere.cpp.s
 .PHONY : src/physics/Sphere.cpp.s
+
+src/physics/StaticBody.o: src/physics/StaticBody.cpp.o
+.PHONY : src/physics/StaticBody.o
+
+# target to build an object file
+src/physics/StaticBody.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/StaticBody.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/StaticBody.cpp.o
+.PHONY : src/physics/StaticBody.cpp.o
+
+src/physics/StaticBody.i: src/physics/StaticBody.cpp.i
+.PHONY : src/physics/StaticBody.i
+
+# target to preprocess a source file
+src/physics/StaticBody.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/StaticBody.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/StaticBody.cpp.i
+.PHONY : src/physics/StaticBody.cpp.i
+
+src/physics/StaticBody.s: src/physics/StaticBody.cpp.s
+.PHONY : src/physics/StaticBody.s
+
+# target to generate assembly for a file
+src/physics/StaticBody.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/StaticBody.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/StaticBody.cpp.s
+.PHONY : src/physics/StaticBody.cpp.s
 
 src/physics/System.o: src/physics/System.cpp.o
 .PHONY : src/physics/System.o
 
 # target to build an object file
 src/physics/System.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/physics/System.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/System.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/System.cpp.o
 .PHONY : src/physics/System.cpp.o
 
 src/physics/System.i: src/physics/System.cpp.i
@@ -478,7 +771,8 @@ src/physics/System.i: src/physics/System.cpp.i
 
 # target to preprocess a source file
 src/physics/System.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/physics/System.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/System.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/System.cpp.i
 .PHONY : src/physics/System.cpp.i
 
 src/physics/System.s: src/physics/System.cpp.s
@@ -486,8 +780,36 @@ src/physics/System.s: src/physics/System.cpp.s
 
 # target to generate assembly for a file
 src/physics/System.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyPhysics.dir/build.make CMakeFiles/RigidBodyPhysics.dir/src/physics/System.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/System.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/System.cpp.s
 .PHONY : src/physics/System.cpp.s
+
+src/physics/TestRigidBody.o: src/physics/TestRigidBody.cpp.o
+.PHONY : src/physics/TestRigidBody.o
+
+# target to build an object file
+src/physics/TestRigidBody.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/TestRigidBody.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/TestRigidBody.cpp.o
+.PHONY : src/physics/TestRigidBody.cpp.o
+
+src/physics/TestRigidBody.i: src/physics/TestRigidBody.cpp.i
+.PHONY : src/physics/TestRigidBody.i
+
+# target to preprocess a source file
+src/physics/TestRigidBody.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/TestRigidBody.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/TestRigidBody.cpp.i
+.PHONY : src/physics/TestRigidBody.cpp.i
+
+src/physics/TestRigidBody.s: src/physics/TestRigidBody.cpp.s
+.PHONY : src/physics/TestRigidBody.s
+
+# target to generate assembly for a file
+src/physics/TestRigidBody.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/TestRigidBody.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/TestRigidBody.cpp.s
+.PHONY : src/physics/TestRigidBody.cpp.s
 
 # Help Target
 help:
@@ -497,19 +819,26 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... RigidBodyPhysics"
-	@echo "... src/CollisionSystem.o"
-	@echo "... src/CollisionSystem.i"
-	@echo "... src/CollisionSystem.s"
+	@echo "... RigidBodySimulation"
+	@echo "... RigidBodyTest"
+	@echo "... src/graphics/BoxModel.o"
+	@echo "... src/graphics/BoxModel.i"
+	@echo "... src/graphics/BoxModel.s"
 	@echo "... src/graphics/Camera.o"
 	@echo "... src/graphics/Camera.i"
 	@echo "... src/graphics/Camera.s"
 	@echo "... src/graphics/GraphicsModel.o"
 	@echo "... src/graphics/GraphicsModel.i"
 	@echo "... src/graphics/GraphicsModel.s"
+	@echo "... src/graphics/GridModel.o"
+	@echo "... src/graphics/GridModel.i"
+	@echo "... src/graphics/GridModel.s"
 	@echo "... src/graphics/InputManager.o"
 	@echo "... src/graphics/InputManager.i"
 	@echo "... src/graphics/InputManager.s"
+	@echo "... src/graphics/SeparatingPlaneModel.o"
+	@echo "... src/graphics/SeparatingPlaneModel.i"
+	@echo "... src/graphics/SeparatingPlaneModel.s"
 	@echo "... src/graphics/Simulation.o"
 	@echo "... src/graphics/Simulation.i"
 	@echo "... src/graphics/Simulation.s"
@@ -519,12 +848,24 @@ help:
 	@echo "... src/graphics/utils.o"
 	@echo "... src/graphics/utils.i"
 	@echo "... src/graphics/utils.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... src/main_ode_test.o"
+	@echo "... src/main_ode_test.i"
+	@echo "... src/main_ode_test.s"
+	@echo "... src/main_simulation.o"
+	@echo "... src/main_simulation.i"
+	@echo "... src/main_simulation.s"
+	@echo "... src/physics/AABB.o"
+	@echo "... src/physics/AABB.i"
+	@echo "... src/physics/AABB.s"
+	@echo "... src/physics/AABBTree.o"
+	@echo "... src/physics/AABBTree.i"
+	@echo "... src/physics/AABBTree.s"
 	@echo "... src/physics/Ball.o"
 	@echo "... src/physics/Ball.i"
 	@echo "... src/physics/Ball.s"
+	@echo "... src/physics/BoxGeometry.o"
+	@echo "... src/physics/BoxGeometry.i"
+	@echo "... src/physics/BoxGeometry.s"
 	@echo "... src/physics/EulerSolver.o"
 	@echo "... src/physics/EulerSolver.i"
 	@echo "... src/physics/EulerSolver.s"
@@ -537,12 +878,24 @@ help:
 	@echo "... src/physics/RungeKuttaSolver.o"
 	@echo "... src/physics/RungeKuttaSolver.i"
 	@echo "... src/physics/RungeKuttaSolver.s"
+	@echo "... src/physics/SATCollisionDetector.o"
+	@echo "... src/physics/SATCollisionDetector.i"
+	@echo "... src/physics/SATCollisionDetector.s"
+	@echo "... src/physics/Solvers.o"
+	@echo "... src/physics/Solvers.i"
+	@echo "... src/physics/Solvers.s"
 	@echo "... src/physics/Sphere.o"
 	@echo "... src/physics/Sphere.i"
 	@echo "... src/physics/Sphere.s"
+	@echo "... src/physics/StaticBody.o"
+	@echo "... src/physics/StaticBody.i"
+	@echo "... src/physics/StaticBody.s"
 	@echo "... src/physics/System.o"
 	@echo "... src/physics/System.i"
 	@echo "... src/physics/System.s"
+	@echo "... src/physics/TestRigidBody.o"
+	@echo "... src/physics/TestRigidBody.i"
+	@echo "... src/physics/TestRigidBody.s"
 .PHONY : help
 
 

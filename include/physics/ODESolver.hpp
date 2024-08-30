@@ -1,6 +1,6 @@
 #pragma once
 
-#include "RigidBody.hpp"
+#include <physics/RigidBody.hpp>
 namespace aun{
     class ODESolver {
         public:

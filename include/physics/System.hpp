@@ -5,14 +5,14 @@
 namespace aun{
     class System{
     private:
-        std::vector<std::unique_ptr<RigidBody>> bodies;
-        std::unique_ptr<ODESolver> solver;
+        std::vector<RigidBody*> bodies;
+        ODESolver *solver;
         float dt;
     public: 
         System();
-        System(float dt, std::unique_ptr<ODESolver> solver);
+        System(float dt, ODESolver *solver);
         void update(float dt);
-        void addRigidBody(std::unique_ptr<RigidBody> body);
-        const std::vector<std::unique_ptr<RigidBody>>& getBodies() const;
+        void addRigidBody(RigidBody *body);
+        const std::vector<RigidBody*>& getBodies() const;
     };
 }

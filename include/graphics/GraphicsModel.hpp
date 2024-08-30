@@ -10,7 +10,7 @@ namespace aun{
 class GraphicsModel {
 protected:
     GLuint VAO, VBO, EBO;
-    std::vector<GLfloat> vertices;
+    std::vector<GLfloat> vertices; // Expects vertices followed by its normals.
     std::vector<GLuint> indices;
     GLuint *shaderProgram;
 
@@ -19,7 +19,7 @@ public:
     ~GraphicsModel();
 
     void initBuffers();
-    void render(const glm::mat4& transform);
+    void render(const glm::mat4& transform, GLenum mode = GL_TRIANGLES);
     void setShaderProgram(GLuint *shaderProgram);
 };
 }

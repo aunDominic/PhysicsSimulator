@@ -15,16 +15,25 @@ void Simulation::initSDL() {
 }
 
 void Simulation::initOpenGL() {
+
+    SDL_SetWindowRelativeMouseMode(window, SDL_TRUE);
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 4);
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 1);
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_FLAGS, SDL_GL_CONTEXT_FORWARD_COMPATIBLE_FLAG);
+    SDL_GL_SetAttribute(SDL_GL_MULTISAMPLEBUFFERS, 1);
+    SDL_GL_SetAttribute(SDL_GL_MULTISAMPLESAMPLES, 4); // Request 4x MSAA
+
     glContext = SDL_GL_CreateContext(window);
     if (glContext == nullptr) {
         spdlog::error("OpenGL context could not be created! SDL Error: {}", SDL_GetError());
         exit(1);
     }
-    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 4);
-    SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 1);
-    SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
-    SDL_GL_SetAttribute(SDL_GL_CONTEXT_FLAGS, SDL_GL_CONTEXT_FORWARD_COMPATIBLE_FLAG);
-
+    glEnable(GL_DEPTH_TEST);
+    glEnable(GL_MULTISAMPLE);
+    GLint samples;
+    glGetIntegerv(GL_SAMPLES, &samples);
+    spdlog::info("Number of samples used for MSAA: {}", samples);
 
     const GLubyte* version = glGetString(GL_VERSION);
     spdlog::info("OpenGL version: {}", reinterpret_cast<const char *>(version));
@@ -45,8 +54,9 @@ void Simulation::initOpenGL() {
     char * vertex_source = VERTEX_SHADER_PATH;
     char * fragment_source = FRAGMENT_SHADER_PATH;
     shaderProgram = createShaderProgram(vertex_source, fragment_source);
+    gridShaderProgram = createShaderProgram(GRID_VERTEX_SHADER_PATH, GRID_FRAGMENT_SHADER_PATH);
     spdlog::info("Shader program compiled and linked sucessfully.");
-    glViewport(0, 0, 800, 600);
+    glViewport(0, 0, WIDTH, HEIGHT);
     glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
     spdlog::info("OpenGL succesfully initialised.");
 }
@@ -62,6 +72,7 @@ void Simulation::handleEvents() {
         }
         // Handle mouse motion
         if (event.type == SDL_EVENT_MOUSE_MOTION) {
+            spdlog::debug("MOUSE COORD: {}, {}", event.motion.x, event.motion.y);
             inputManager.handleMouseMovement(event.motion.x, event.motion.y, camera);
         }
 
@@ -76,12 +87,30 @@ void Simulation::render() {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
     // Render your objects here
-    // Render all game objects
-
     glm::mat4 view = camera.getView();
     glm::mat4 projection = camera.getProjection();
-    std::cout << "View matrix in render";
-    log_mat4(view);
+
+    glUseProgram(gridShaderProgram);
+
+    GLuint viewGridLoc = glGetUniformLocation(gridShaderProgram, "view");
+    GLenum err = glGetError();
+    if (err != GL_NO_ERROR) {
+        spdlog::error("OpenGL error on retrieving view: {}", err);
+    }
+    glUniformMatrix4fv(viewGridLoc, 1, GL_FALSE, glm::value_ptr(view));
+    err = glGetError();
+    if (err != GL_NO_ERROR) {
+        spdlog::error("OpenGL error on setting view: {}", err);
+    }
+    GLuint projectionGridLoc = glGetUniformLocation(gridShaderProgram, "projection");
+    glUniformMatrix4fv(projectionGridLoc, 1, GL_FALSE, glm::value_ptr(projection));
+    err = glGetError();
+    if (err != GL_NO_ERROR) {
+        spdlog::error("OpenGL error on setting projection: {}", err);
+    }
+
+    glUseProgram(shaderProgram);
+
     GLuint viewLoc = glGetUniformLocation(shaderProgram, "view");
     glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
 
@@ -89,8 +118,8 @@ void Simulation::render() {
     glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, glm::value_ptr(projection));
 
     GLuint lightPosLoc = glGetUniformLocation(shaderProgram, "lightPos");
-    glUniform3f(lightPosLoc, 1.2f, 1.0f, 2.0f);  // Example light position
-
+    glUniform3f(lightPosLoc, 10.0f, 10.0f, 10.0f);  // Adjust these values
+    
     GLuint lightColorLoc = glGetUniformLocation(shaderProgram, "lightColor");
     glUniform3f(lightColorLoc, 1.0f, 1.0f, 1.0f);  // White light
 
@@ -100,10 +129,30 @@ void Simulation::render() {
     GLuint colorBottomLoc = glGetUniformLocation(shaderProgram, "colorBottom");
     glUniform3f(colorBottomLoc, 0.8f, 0.4f, 0.1f);  // Example bottom color (orange)
 
-    for (const auto& body : system->getBodies()) {
+    GLuint ambientStrengthLoc = glGetUniformLocation(shaderProgram, "ambientStrength");
+    glUniform1f(ambientStrengthLoc, 0.1f);  // Adjust this value as needed    
+
+    auto bodies = system->getBodies();
+    for (const auto& body : bodies) {
+        auto pos = body->getPosition();
+        spdlog::debug("Rendering body at position: ({}, {}, {}) with type:{}", 
+                  pos.x, pos.y, pos.z, static_cast<int>(body->geometry->getType()));
         body->geometry->graphicsModel->render(body->getTransformMatrix());
     }
-    
+    spdlog::debug("Detecting collisions...");
+    for (int i = 0; i < bodies.size(); i++){
+        for (int j = i + 1; j < bodies.size(); j++){
+            CollisionInfo info = collisionDetector->checkCollision(bodies[i]->geometry, bodies[j]->geometry);
+            SeparatingPlaneModel plane;
+            if (!info.hasCollision)
+                plane.updatePlane(info, bodies[i]->geometry, bodies[j]->geometry);
+                spdlog::debug("Rendering plane model");
+                plane.setShaderProgram(&shaderProgram);
+                plane.render(glm::mat4(1.0f));
+        }
+    }
+    spdlog::debug("Rendering grid model");
+    gridModel.render(glm::mat4(1.0f));
     SDL_GL_SwapWindow(window);
 }
 
@@ -113,7 +162,8 @@ Simulation::Simulation(bool running): running(running) {
     initSDL();
     initOpenGL();
     camera = Camera(WIDTH, HEIGHT);
-    inputManager = InputManager();
+    inputManager = InputManager();    
+    spdlog::debug("Finished initialising Simulation.");
 }
 
 Simulation::~Simulation() {
@@ -121,12 +171,15 @@ Simulation::~Simulation() {
     SDL_DestroyWindow(window);
     SDL_Quit();
 }
-void Simulation::setSystem(std::unique_ptr<System> system){
+void Simulation::setSystem(System *system){
     this->system = std::move(system);
     spdlog::debug("Setting system shader programs...");
     for (auto &body: this->system->getBodies()){
         body->geometry->graphicsModel->setShaderProgram(&shaderProgram);
     }
+    gridModel.createGrid();
+    gridModel.initBuffers();
+    gridModel.setShaderProgram(&gridShaderProgram);
 }
 void Simulation::run() {
     running = true;
@@ -137,7 +190,7 @@ void Simulation::run() {
         Uint64 frameStart = SDL_GetTicks();
 
         handleEvents();
-        inputManager.handleInput(1.0f / 60.0, camera);
+        inputManager.handleInput(1.0f / 60.0, system->getBodies()[0]);
         update();
 
         render();

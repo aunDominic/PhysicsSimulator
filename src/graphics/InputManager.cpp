@@ -7,6 +7,7 @@ InputManager::InputManager(){
     for (const auto&[key, val]: actionMapping){
         std::cout << key << " " << val;
     }
+    firstMouse = true;
 }
 void InputManager::updateKeyState(const SDL_KeyboardEvent& keyEvent) {
     keyStates[keyEvent.key] = (keyEvent.type == SDL_EVENT_KEY_DOWN);
@@ -46,7 +47,7 @@ void InputManager::loadInputConfig(const std::string& filePath) {
 void InputManager::handleInput(float dt){
     // TODO: implement handleInput
 }
-void InputManager::handleInput(float dt, aun::Camera& camera) {
+void InputManager::handleInput(float dt, Camera& camera) {
     if (isKeyPressed("FORWARD")) {
         spdlog::debug("Input FORWARD is detected.");
         camera.processKeyboard("FORWARD", dt);
@@ -60,14 +61,41 @@ void InputManager::handleInput(float dt, aun::Camera& camera) {
     if (isKeyPressed("RIGHT")) {
         camera.processKeyboard("RIGHT", dt);
     }
+    if (isKeyPressed("UP")){
+        camera.processKeyboard("UP", dt);
+    }
+    if (isKeyPressed("DOWN")){
+        camera.processKeyboard("DOWN", dt);
+    }
 }
-void InputManager::handleMouseMovement(int xpos, int ypos, aun::Camera& camera) {
+void InputManager::handleInput(float dt, RigidBody *body){
+    if (isKeyPressed("FORWARD")) {
+        spdlog::debug("Input FORWARD is detected.");
+        body->processKeyboard("FORWARD", dt);
+    }
+    if (isKeyPressed("BACKWARD")) {
+        body->processKeyboard("BACKWARD", dt);
+    }
+    if (isKeyPressed("LEFT")) {
+        body->processKeyboard("LEFT", dt);
+    }
+    if (isKeyPressed("RIGHT")) {
+        body->processKeyboard("RIGHT", dt);
+    }
+    if (isKeyPressed("UP")){
+        body->processKeyboard("UP", dt);
+    }
+    if (isKeyPressed("DOWN")){
+        body->processKeyboard("DOWN", dt);
+    }
+}
+void InputManager::handleMouseMovement(int xpos, int ypos, Camera& camera) {
     if (firstMouse) {
         lastX = xpos;
         lastY = ypos;
         firstMouse = false;
     }
-
+    spdlog::debug("xpos: {}, lastX: {}", xpos, lastX);
     float xoffset = xpos - lastX;
     float yoffset = lastY - ypos; // Inverted y-axis for natural feel
 

@@ -44,8 +44,6 @@ GLuint createShaderProgram(const char* vertexSourcePath, const char* fragmentSou
     GLuint shaderProgram = glCreateProgram();
     glAttachShader(shaderProgram, vertexShader);
     glAttachShader(shaderProgram, fragmentShader);
-    glBindAttribLocation(shaderProgram, 0, "aPos");    // Bind aPos to location 0
-    glBindAttribLocation(shaderProgram, 1, "aNormal"); // Bind aNormal to location 1
 
     glLinkProgram(shaderProgram);
     
@@ -75,4 +73,17 @@ void log_mat4(const glm::mat4& mat) {
     }
     spdlog::info(oss.str());
 }
+// Helper function to convert glm::vec3 to string
+inline std::string vec3_to_string(const glm::vec3& v, int precision) {
+    std::ostringstream oss;
+    oss << std::fixed << std::setprecision(precision) 
+        << "(" << v.x << ", " << v.y << ", " << v.z << ")";
+    return oss.str();
+}
+
+// Example usage in your code
+void log_vector(const glm::vec3& v, const std::string& label) {
+    spdlog::debug("{} {}", label, vec3_to_string(v));
+}
+
 }
