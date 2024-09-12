@@ -124,13 +124,13 @@ void Simulation::render() {
     glUniform3f(lightColorLoc, 1.0f, 1.0f, 1.0f);  // White light
 
     GLuint colorTopLoc = glGetUniformLocation(shaderProgram, "colorTop");
-    glUniform3f(colorTopLoc, 0.0f, 0.5f, 1.0f);  // Example top color (sky blue)
+    glUniform3f(colorTopLoc, 1.0f, 1.0f, 1.0f);  // Example top color (sky blue)
 
     GLuint colorBottomLoc = glGetUniformLocation(shaderProgram, "colorBottom");
-    glUniform3f(colorBottomLoc, 0.8f, 0.4f, 0.1f);  // Example bottom color (orange)
+    glUniform3f(colorBottomLoc, 1.0f, 1.0f, 1.0f);  // Example bottom color (orange)
 
     GLuint ambientStrengthLoc = glGetUniformLocation(shaderProgram, "ambientStrength");
-    glUniform1f(ambientStrengthLoc, 0.1f);  // Adjust this value as needed    
+    glUniform1f(ambientStrengthLoc, 0.5f);  // Adjust this value as needed    
 
     auto bodies = system->getBodies();
     for (const auto& body : bodies) {
@@ -138,17 +138,19 @@ void Simulation::render() {
         spdlog::debug("Rendering body at position: ({}, {}, {}) with type:{}", 
                   pos.x, pos.y, pos.z, static_cast<int>(body->geometry->getType()));
         body->geometry->graphicsModel->render(body->getTransformMatrix());
+        body->geometry->graphicsModel->renderNormals(body->getTransformMatrix());
     }
     spdlog::debug("Detecting collisions...");
     for (int i = 0; i < bodies.size(); i++){
         for (int j = i + 1; j < bodies.size(); j++){
             CollisionInfo info = collisionDetector->checkCollision(bodies[i]->geometry, bodies[j]->geometry);
             SeparatingPlaneModel plane;
-            if (!info.hasCollision)
+            if (!info.hasCollision){
                 plane.updatePlane(info, bodies[i]->geometry, bodies[j]->geometry);
                 spdlog::debug("Rendering plane model");
                 plane.setShaderProgram(&shaderProgram);
                 plane.render(glm::mat4(1.0f));
+            }
         }
     }
     spdlog::debug("Rendering grid model");
@@ -190,7 +192,12 @@ void Simulation::run() {
         Uint64 frameStart = SDL_GetTicks();
 
         handleEvents();
-        inputManager.handleInput(1.0f / 60.0, system->getBodies()[0]);
+        if (inputManager.isKeyPressed("TOGGLE_CAMERA"))
+            inputManager.setInputable(&camera);
+        if (inputManager.isKeyPressed("TOGGLE_BODY"))
+            inputManager.setInputable(system->getBodies()[0]);
+        inputManager.handleInput(1.0f / 60.0);
+        
         update();
 
         render();

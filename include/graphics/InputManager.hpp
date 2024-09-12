@@ -9,6 +9,7 @@
 #include <string>
 #include <iostream>
 #include <physics/RigidBody.hpp>
+#include <graphics/Inputable.hpp>
 
 namespace aun{
 class InputManager {
@@ -17,6 +18,7 @@ private:
     std::unordered_map<std::string, SDL_Keycode> actionMapping;
     float lastX, lastY;
     bool firstMouse;
+    Inputable *toReceive;
 public:
     void updateKeyState(const SDL_KeyboardEvent& keyEvent);
     bool isKeyPressed(SDL_Keycode key) const;
@@ -25,6 +27,8 @@ public:
     void handleInput(float dt);
     void handleInput(float dt, Camera& camera);
     void handleInput(float dt, RigidBody *body);
+    void setInputable(Inputable *object);
+
 
     void handleMouseMovement(int xpos, int ypos, Camera& camera);
     InputManager();

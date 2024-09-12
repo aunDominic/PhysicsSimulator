@@ -38,13 +38,16 @@ public:
     virtual glm::vec3 getSupport(const glm::vec3& direction) const = 0;
     virtual glm::vec3 getClosestPoint(const glm::vec3& point) const = 0;
     virtual float getVolume() const = 0;
+    virtual float getCrossSectionArea() const = 0;
     virtual glm::mat3 getInertiaTensor(float mass) const = 0;
     virtual void transform(const glm::mat4& transformation) = 0;
      virtual std::vector<glm::vec3> getFaceNormals() const = 0;
     virtual std::vector<glm::vec3> getEdges() const = 0;
     virtual std::vector<glm::vec3> getVertices() const = 0;
+    virtual std::vector<GLfloat> getFaceNormalVertices(float normalLength) const = 0;
     glm::vec3 getCenter() const { return getTransformMatrix() * glm::vec4(center, 1.0f);};
     glm::mat4 getTransformMatrix() const;
+    std::vector<glm::vec3> vec3_to_world(std::vector<glm::vec3> local, bool isTranslate = 1) const;
 
 };
 

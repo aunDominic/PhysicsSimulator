@@ -86,4 +86,34 @@ void GraphicsModel::render(const glm::mat4& transform, GLenum mode) {
     glBindVertexArray(0);
 }
 
+void GraphicsModel::initNormalBuffers() {
+    spdlog::debug("Initialising normal buffers");
+    glGenVertexArrays(1, &normalVAO);
+    glGenBuffers(1, &normalVBO);
+
+    glBindVertexArray(normalVAO);
+    glBindBuffer(GL_ARRAY_BUFFER, normalVBO);
+    glBufferData(GL_ARRAY_BUFFER, normalVertices.size() * sizeof(GLfloat), normalVertices.data(), GL_STATIC_DRAW);
+
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(GLfloat), (void*)0);
+    glEnableVertexAttribArray(0);
+
+    glBindBuffer(GL_ARRAY_BUFFER, 0);
+    glBindVertexArray(0);
+}
+
+void GraphicsModel::renderNormals(const glm::mat4& transform) {
+    spdlog::debug("Rendering normals...");
+    log_mat4(transform);
+
+    glUseProgram(*shaderProgram);
+
+    GLuint modelLoc = glGetUniformLocation(*shaderProgram, "model");
+    glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(transform));
+
+    glBindVertexArray(normalVAO);
+    glLineWidth(2.0f);
+    glDrawArrays(GL_LINES, 0, normalVertices.size() / 3);
+    glBindVertexArray(0);
+}
 }

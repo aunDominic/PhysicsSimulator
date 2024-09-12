@@ -277,6 +277,33 @@ src/graphics/InputManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/graphics/InputManager.cpp.s
 .PHONY : src/graphics/InputManager.cpp.s
 
+src/graphics/NormalVectorModel.o: src/graphics/NormalVectorModel.cpp.o
+.PHONY : src/graphics/NormalVectorModel.o
+
+# target to build an object file
+src/graphics/NormalVectorModel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/graphics/NormalVectorModel.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/graphics/NormalVectorModel.cpp.o
+.PHONY : src/graphics/NormalVectorModel.cpp.o
+
+src/graphics/NormalVectorModel.i: src/graphics/NormalVectorModel.cpp.i
+.PHONY : src/graphics/NormalVectorModel.i
+
+# target to preprocess a source file
+src/graphics/NormalVectorModel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/graphics/NormalVectorModel.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/graphics/NormalVectorModel.cpp.i
+.PHONY : src/graphics/NormalVectorModel.cpp.i
+
+src/graphics/NormalVectorModel.s: src/graphics/NormalVectorModel.cpp.s
+.PHONY : src/graphics/NormalVectorModel.s
+
+# target to generate assembly for a file
+src/graphics/NormalVectorModel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/graphics/NormalVectorModel.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/graphics/NormalVectorModel.cpp.s
+.PHONY : src/graphics/NormalVectorModel.cpp.s
+
 src/graphics/SeparatingPlaneModel.o: src/graphics/SeparatingPlaneModel.cpp.o
 .PHONY : src/graphics/SeparatingPlaneModel.o
 
@@ -568,6 +595,33 @@ src/physics/EulerSolver.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/EulerSolver.cpp.s
 .PHONY : src/physics/EulerSolver.cpp.s
 
+src/physics/ForceGenerator.o: src/physics/ForceGenerator.cpp.o
+.PHONY : src/physics/ForceGenerator.o
+
+# target to build an object file
+src/physics/ForceGenerator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/ForceGenerator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/ForceGenerator.cpp.o
+.PHONY : src/physics/ForceGenerator.cpp.o
+
+src/physics/ForceGenerator.i: src/physics/ForceGenerator.cpp.i
+.PHONY : src/physics/ForceGenerator.i
+
+# target to preprocess a source file
+src/physics/ForceGenerator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/ForceGenerator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/ForceGenerator.cpp.i
+.PHONY : src/physics/ForceGenerator.cpp.i
+
+src/physics/ForceGenerator.s: src/physics/ForceGenerator.cpp.s
+.PHONY : src/physics/ForceGenerator.s
+
+# target to generate assembly for a file
+src/physics/ForceGenerator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodySimulation.dir/build.make CMakeFiles/RigidBodySimulation.dir/src/physics/ForceGenerator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RigidBodyTest.dir/build.make CMakeFiles/RigidBodyTest.dir/src/physics/ForceGenerator.cpp.s
+.PHONY : src/physics/ForceGenerator.cpp.s
+
 src/physics/Geometry.o: src/physics/Geometry.cpp.o
 .PHONY : src/physics/Geometry.o
 
@@ -836,6 +890,9 @@ help:
 	@echo "... src/graphics/InputManager.o"
 	@echo "... src/graphics/InputManager.i"
 	@echo "... src/graphics/InputManager.s"
+	@echo "... src/graphics/NormalVectorModel.o"
+	@echo "... src/graphics/NormalVectorModel.i"
+	@echo "... src/graphics/NormalVectorModel.s"
 	@echo "... src/graphics/SeparatingPlaneModel.o"
 	@echo "... src/graphics/SeparatingPlaneModel.i"
 	@echo "... src/graphics/SeparatingPlaneModel.s"
@@ -869,6 +926,9 @@ help:
 	@echo "... src/physics/EulerSolver.o"
 	@echo "... src/physics/EulerSolver.i"
 	@echo "... src/physics/EulerSolver.s"
+	@echo "... src/physics/ForceGenerator.o"
+	@echo "... src/physics/ForceGenerator.i"
+	@echo "... src/physics/ForceGenerator.s"
 	@echo "... src/physics/Geometry.o"
 	@echo "... src/physics/Geometry.i"
 	@echo "... src/physics/Geometry.s"

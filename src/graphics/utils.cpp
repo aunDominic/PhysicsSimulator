@@ -67,12 +67,24 @@ void log_mat4(const glm::mat4& mat) {
     oss << "glm::mat4:\n";
     for (int i = 0; i < 4; ++i) {
         for (int j = 0; j < 4; ++j) {
-            oss << mat[i][j] << " ";
+            oss << mat[j][i] << " ";
         }
         oss << "\n";
     }
     spdlog::info(oss.str());
 }
+void log_mat3(const glm::mat3& mat) {
+    std::ostringstream oss;
+    oss << "glm::mat3:\n";
+    for (int i = 0; i < 3; ++i) {
+        for (int j = 0; j < 3; ++j) {
+            oss << mat[j][i] << " ";
+        }
+        oss << "\n";
+    }
+    spdlog::info(oss.str());
+}
+
 // Helper function to convert glm::vec3 to string
 inline std::string vec3_to_string(const glm::vec3& v, int precision) {
     std::ostringstream oss;

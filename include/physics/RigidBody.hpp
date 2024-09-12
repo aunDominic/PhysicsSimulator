@@ -9,7 +9,7 @@ namespace aun{
     class RigidBody: public Inputable{
     public:
         // Mass properties
-        float mass;
+        float mass = 5.0f; // Default mass = 5kg
         float inverseMass;
         glm::mat3 inertiaTensor;         // TODO: Calculate inertiaTensor
         glm::mat3 inverseInertiaTensor;

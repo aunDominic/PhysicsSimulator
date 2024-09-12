@@ -45,8 +45,32 @@ void InputManager::loadInputConfig(const std::string& filePath) {
     spdlog::info("Succesfully loaded config input");
 } 
 void InputManager::handleInput(float dt){
-    // TODO: implement handleInput
+    if (isKeyPressed("FORWARD")) {
+        spdlog::debug("Input FORWARD is detected.");
+        toReceive->processKeyboard("FORWARD", dt);
+    }
+    if (isKeyPressed("BACKWARD")) {
+        toReceive->processKeyboard("BACKWARD", dt);
+    }
+    if (isKeyPressed("LEFT")) {
+        toReceive->processKeyboard("LEFT", dt);
+    }
+    if (isKeyPressed("RIGHT")) {
+        toReceive->processKeyboard("RIGHT", dt);
+    }
+    if (isKeyPressed("UP")){
+        toReceive->processKeyboard("UP", dt);
+    }
+    if (isKeyPressed("DOWN")){
+        toReceive->processKeyboard("DOWN", dt);
+    }
 }
+
+
+void InputManager::setInputable(Inputable *object){
+    toReceive = object;
+}
+
 void InputManager::handleInput(float dt, Camera& camera) {
     if (isKeyPressed("FORWARD")) {
         spdlog::debug("Input FORWARD is detected.");
@@ -89,6 +113,7 @@ void InputManager::handleInput(float dt, RigidBody *body){
         body->processKeyboard("DOWN", dt);
     }
 }
+
 void InputManager::handleMouseMovement(int xpos, int ypos, Camera& camera) {
     if (firstMouse) {
         lastX = xpos;

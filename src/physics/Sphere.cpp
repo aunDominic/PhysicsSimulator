@@ -46,6 +46,9 @@ glm::vec3 Sphere::getClosestPoint(const glm::vec3& point) const {
 float Sphere::getVolume() const {
     return (4.0f / 3.0f) * glm::pi<float>() * radius * radius * radius;
 }
+float Sphere::getCrossSectionArea() const {
+    return radius * radius;
+}
 
 glm::mat3 Sphere::getInertiaTensor(float mass) const {
     float i = 2.0f * mass * radius * radius / 5.0f;
@@ -76,6 +79,8 @@ std::vector<glm::vec3> Sphere::getVertices() const {
     log_mat4(getTransformMatrix());
     return {getTransformMatrix() * glm::vec4(center, 1.0f)}; // The sphere can be represented by its center for many calculations
 }
-
+std::vector<GLfloat> Sphere::getFaceNormalVertices(float normalLength) const {
+    
+}
 
 } // namespace aun

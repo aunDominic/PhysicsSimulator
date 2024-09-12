@@ -7,7 +7,7 @@ RigidBody::RigidBody(){
     orientation = glm::quat(1.0f, 0.0f, 0.0f, 0.0f);    
 } 
 RigidBody::RigidBody(glm::vec3 position) : position(position){
-    orientation = glm::quat(1.0f, 0.5f, 0.0f, 0.0f);
+    orientation = glm::quat(1.0f, 0.0f, 0.0f, 0.0f);
 }
 RigidBody::RigidBody(glm::quat ori) : orientation(ori){
     position = glm::vec3(0);
@@ -20,6 +20,7 @@ velocity(velocity), angularVelocity(angularVelocity){
 };
 
 void RigidBody::applyForce(const glm::vec3& force, const glm::vec3& point) {
+    spdlog::debug("Applying force:{}, at position:{}", vec3_to_string(force), vec3_to_string(point));
     this->force += force;
     
     glm::vec3 torque = glm::cross(point - position, force);
@@ -39,7 +40,8 @@ void RigidBody::derivativeEvaluation(const glm::vec3& position, const glm::quat&
     angularVelocityDerivative = glm::inverse(orientation) * (inverseInertiaTensor * (orientation * torque));
 }
 glm::mat4 RigidBody::getTransformMatrix() const {
-    
+    spdlog::debug("Called in RigidBody position:{}, orientation:", vec3_to_string(position));
+    log_mat4(glm::mat4_cast(orientation));
     glm::mat4 transform = glm::translate(glm::mat4(1.0f), this->position);
 
     // Apply rotation (assuming rigidBody.rotation is a quaternion)
@@ -50,13 +52,18 @@ glm::mat4 RigidBody::getTransformMatrix() const {
     // transform = glm::scale(transform, rigidBody.scale);
     return transform;
 }
+
 void RigidBody::setGeometry(Geometry *geo) {
+    spdlog::debug("Setting Geometry for RigidBody...");
+
     geometry = std::move(geo);
     geometry->position = &position;
     geometry->orientation = &orientation;
+    geometry->graphicsModel->setNormalVertices(geometry->getFaceNormalVertices(5.0f));
+    geometry->graphicsModel->initNormalBuffers();
 }
 void RigidBody::processKeyboard(const std::string &direction, float deltaTime) {
-        spdlog::debug("Processing keyboard inputs for RigidBody");
+    spdlog::debug("Processing keyboard inputs for RigidBody");
     float velocity = movementSpeed * deltaTime;
     glm::vec3 front = glm::vec3(0,0,1);
     glm::vec3 right = glm::vec3(1,0,0);
