@@ -26,7 +26,6 @@ public:
     glm::vec3 *position;                 // Center of mass
     glm::quat *orientation;              
     std::vector<glm::vec3> vertices; 
-
     
     Geometry(){}
     Geometry(glm::vec3 center);

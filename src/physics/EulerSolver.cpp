@@ -13,10 +13,10 @@ void EulerSolver::solve(RigidBody& body, float dt){
                             positionDerivative, orientationDerivative,
                             linearVelocityDerivative, angularVelocityDerivative);
 
-    body.position += positionDerivative * dt;
-    body.orientation += orientationDerivative * dt;
     body.velocity += linearVelocityDerivative * dt;
     body.angularVelocity += angularVelocityDerivative * dt;
+    body.position += positionDerivative * dt;
+    body.orientation += orientationDerivative * dt;
 
     body.orientation = glm::normalize(body.orientation);
 

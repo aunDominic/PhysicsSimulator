@@ -140,19 +140,19 @@ void Simulation::render() {
         body->geometry->graphicsModel->render(body->getTransformMatrix());
         body->geometry->graphicsModel->renderNormals(body->getTransformMatrix());
     }
-    spdlog::debug("Detecting collisions...");
-    for (int i = 0; i < bodies.size(); i++){
-        for (int j = i + 1; j < bodies.size(); j++){
-            CollisionInfo info = collisionDetector->checkCollision(bodies[i]->geometry, bodies[j]->geometry);
-            SeparatingPlaneModel plane;
-            if (!info.hasCollision){
-                plane.updatePlane(info, bodies[i]->geometry, bodies[j]->geometry);
-                spdlog::debug("Rendering plane model");
-                plane.setShaderProgram(&shaderProgram);
-                plane.render(glm::mat4(1.0f));
-            }
-        }
-    }
+    // spdlog::debug("Detecting collisions...");
+    // for (int i = 0; i < bodies.size(); i++){
+    //     for (int j = i + 1; j < bodies.size(); j++){
+    //         CollisionInfo info = collisionDetector->checkCollision(bodies[i]->geometry, bodies[j]->geometry);
+    //         SeparatingPlaneModel plane;
+    //         if (!info.hasCollision){
+    //             plane.updatePlane(info, bodies[i]->geometry, bodies[j]->geometry);
+    //             spdlog::debug("Rendering plane model");
+    //             plane.setShaderProgram(&shaderProgram);
+    //             plane.render(glm::mat4(1.0f));
+    //         }
+    //     }
+    // }
     spdlog::debug("Rendering grid model");
     gridModel.render(glm::mat4(1.0f));
     SDL_GL_SwapWindow(window);
@@ -186,7 +186,7 @@ void Simulation::setSystem(System *system){
 void Simulation::run() {
     running = true;
     Uint64 lastTime = SDL_GetTicks();
-    const Uint64 frameDelay = 1000 / 60; // 60 FPS
+    const Uint64 frameDelay = 1000 /60; // 60 FPS
 
     while (running) {
         Uint64 frameStart = SDL_GetTicks();
@@ -198,8 +198,10 @@ void Simulation::run() {
             inputManager.setInputable(system->getBodies()[0]);
         inputManager.handleInput(1.0f / 60.0);
         
+        // Update current frame.
         update();
 
+        // Rerender the frame.
         render();
 
         Uint64 frameTime = SDL_GetTicks() - frameStart;

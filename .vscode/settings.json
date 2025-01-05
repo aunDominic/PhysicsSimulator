@@ -70,6 +70,16 @@
         "unordered_set": "cpp",
         "list": "cpp",
         "map": "cpp",
-        "set": "cpp"
+        "set": "cpp",
+        "__tree": "cpp",
+        "condition_variable": "cpp",
+        "deque": "cpp",
+        "queue": "cpp",
+        "stack": "cpp",
+        "thread": "cpp",
+        "format": "cpp",
+        "numeric": "cpp",
+        "span": "cpp",
+        "valarray": "cpp"
     }
 }

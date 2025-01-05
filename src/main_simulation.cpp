@@ -17,7 +17,7 @@ void init_multi_sink_logger();
 int main(int argc, char* args[]) {
     init_multi_sink_logger();
 
-    auto solver = new aun::EulerSolver(); 
+    auto solver = new aun::RungeKuttaSolver(); 
     auto BallSystem = new aun::System(1000.0f/60.0f, std::move(solver));
     if (BallSystem == nullptr) {
         spdlog::error("BallSystem is null!");
@@ -25,24 +25,40 @@ int main(int argc, char* args[]) {
     aun::Simulation simulation(true); // Passing a pointer to BallSystem
 
 
+    auto wallLeft = new aun::StaticBody(glm::vec3(-70,0,0));
+    auto wallRight = new aun::StaticBody(glm::vec3(70,0,0));
+    auto wallFront = new aun::StaticBody(glm::vec3(0,0,70));
+    auto wallBack = new aun::StaticBody(glm::vec3(0,0,-70));
 
-    auto floor = new aun::StaticBody(glm::vec3(0,0,0));
+    auto floor = new aun::StaticBody(glm::vec3(0,-2,0));
     spdlog::debug("Creating Rigid Body...\n");
     // Creating a quaternion for a rotation about the Y-axis
 
     // Applying the quaternion to the RigidBody
     auto body = new aun::RigidBody(glm::normalize(glm::quat(1.0f, 0.2f, 0.3f, 0.5)));
-
+    auto body_2 = new aun::RigidBody(glm::vec3(0, 40, 0));
     
     spdlog::debug("BOx coordinates:");
     aun::log_mat4(body->getTransformMatrix());
    
     spdlog::debug("Creating Geometry...\n");
-    floor->setGeometry(new aun::BoxGeometry(glm::vec3(0),10,10,10));
+    floor->setGeometry(new aun::BoxGeometry(glm::vec3(0),100, 1, 100));
+    wallLeft->setGeometry(new aun::BoxGeometry(glm::vec3(0),1, 100, 100));
+    wallRight->setGeometry(new aun::BoxGeometry(glm::vec3(0),1, 100, 100));
+    wallFront->setGeometry(new aun::BoxGeometry(glm::vec3(0),100, 100, 1));
+    wallBack->setGeometry(new aun::BoxGeometry(glm::vec3(0),100, 100, 1));
+    body_2->setGeometry(new aun::BoxGeometry(glm::vec3(0),10, 30, 10));
     body->setGeometry(new aun::BoxGeometry(glm::vec3(0),10,10,10));
+    body->angularVelocity = glm::vec3(10,10,10);
     spdlog::debug("Moving Rigid Body...\n");
     BallSystem->addRigidBody(std::move(body));
     BallSystem->addRigidBody(std::move(floor));
+    BallSystem->addRigidBody(std::move(wallLeft));
+    BallSystem->addRigidBody(std::move(wallRight));
+    BallSystem->addRigidBody(std::move(wallBack));
+    BallSystem->addRigidBody(std::move(wallFront));
+    BallSystem->addRigidBody(std::move(body_2));
+
     simulation.setSystem(std::move(BallSystem));
     simulation.run();
     return 0;

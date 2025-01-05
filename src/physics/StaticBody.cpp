@@ -4,14 +4,12 @@ namespace aun{
 StaticBody::StaticBody() : RigidBody(){
     mass = std::numeric_limits<float>::infinity();
     inverseMass = 0.0f;
-    inertiaTensor = glm::mat3(0.0f);
-    inverseInertiaTensor = glm::mat3(0.0f);
+
 }
 StaticBody::StaticBody(glm::vec3 position) : RigidBody(position){
     mass = std::numeric_limits<float>::infinity();
     inverseMass = 0.0f;
-    inertiaTensor = glm::mat3(0.0f);
-    inverseInertiaTensor = glm::mat3(0.0f);
+
 };
 
 

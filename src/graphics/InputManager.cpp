@@ -26,6 +26,7 @@ void InputManager::loadInputConfig(const std::string& filePath) {
     std::ifstream file(filePath);
     if (!file.is_open()) {
         spdlog::error("Failed to open input config file.");
+        exit(-1);
     }
     nlohmann::json config;
     file >> config;

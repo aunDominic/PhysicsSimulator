@@ -3,11 +3,15 @@
 #include <vector>
 #include <physics/ODESolver.hpp>
 #include <physics/ForceGenerator.hpp>
+#include <physics/CollisionDetector.hpp>
+#include <graphics/utils.hpp>
 namespace aun{
     class System{
     private:
         std::vector<RigidBody*> bodies;
         std::vector<ForceGenerator*> force_generators;
+        CollisionDetector *collisionDetector = new SATDetector();
+
         ODESolver *solver;
         float dt;
     public: 

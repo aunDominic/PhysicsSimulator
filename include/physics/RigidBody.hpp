@@ -10,10 +10,8 @@ namespace aun{
     public:
         // Mass properties
         float mass = 5.0f; // Default mass = 5kg
-        float inverseMass;
-        glm::mat3 inertiaTensor;         // TODO: Calculate inertiaTensor
-        glm::mat3 inverseInertiaTensor;
-
+        float inverseMass = 1 / mass;
+        
         // Position and orientation
         glm::vec3 position;                 // Center of mass
         glm::quat orientation;              

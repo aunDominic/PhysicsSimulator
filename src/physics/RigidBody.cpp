@@ -4,14 +4,16 @@
 namespace aun{       
 RigidBody::RigidBody(){
     position = glm::vec3(0);
-    orientation = glm::quat(1.0f, 0.0f, 0.0f, 0.0f);    
+    orientation = glm::quat(1.0f, 0.0f, 0.0f, 0.0f);   
+    velocity = glm::vec3(0); 
 } 
 RigidBody::RigidBody(glm::vec3 position) : position(position){
     orientation = glm::quat(1.0f, 0.0f, 0.0f, 0.0f);
+    velocity = glm::vec3(0);
 }
 RigidBody::RigidBody(glm::quat ori) : orientation(ori){
-    position = glm::vec3(0);
-
+    position = glm::vec3(0, 10, 0);
+    velocity = glm::vec3(0);
 }
 RigidBody::RigidBody(glm::vec3 position, glm::quat orientation, 
 glm::vec3 velocity, glm::vec3 angularVelocity) : position(position), orientation(orientation), 
@@ -24,9 +26,9 @@ void RigidBody::applyForce(const glm::vec3& force, const glm::vec3& point) {
     this->force += force;
     
     glm::vec3 torque = glm::cross(point - position, force);
-    glm::vec3 bodyTorque = glm::inverse(orientation) * torque;
-    glm::vec3 bodyAngularAcceleration = inverseInertiaTensor * bodyTorque;
-    this->torque += orientation * bodyAngularAcceleration;
+    this->torque += torque;
+
+    spdlog::debug("Finished applying force.");
 }
 
 // Calculates the derivatives of variables that changes over time. 
@@ -35,9 +37,11 @@ void RigidBody::derivativeEvaluation(const glm::vec3& position, const glm::quat&
                                 glm::vec3& positionDerivative, glm::quat& orientationDerivative,
                                 glm::vec3& linearVelocityDerivative, glm::vec3& angularVelocityDerivative) {
     positionDerivative = linearVelocity;
-    orientationDerivative = 0.5f * glm::quat(0, angularVelocity.x, angularVelocity.y, angularVelocity.z) * orientation;
     linearVelocityDerivative = force * inverseMass;
-    angularVelocityDerivative = glm::inverse(orientation) * (inverseInertiaTensor * (orientation * torque));
+    orientationDerivative = 0.5f * glm::quat(0, angularVelocity.x, angularVelocity.y, angularVelocity.z) * orientation;
+    glm::vec3 localTorque = glm::inverse(orientation) * torque;
+    glm::vec3 localAngularVelocityDerivative = glm::inverse(geometry->getInertiaTensor(mass)) * localTorque;
+    angularVelocityDerivative = orientation * localAngularVelocityDerivative;
 }
 glm::mat4 RigidBody::getTransformMatrix() const {
     spdlog::debug("Called in RigidBody position:{}, orientation:", vec3_to_string(position));

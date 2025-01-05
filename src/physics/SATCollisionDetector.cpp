@@ -41,7 +41,7 @@ CollisionInfo SATDetector::checkPolyhedraCollision(const Geometry *a, const Geom
         } else if (overlap < minPenetration) {
             spdlog::debug("1 Axis that overlaps {}, axis:{}", overlap, vec3_to_string(adjustedAxis, 12));
             minPenetration = overlap;
-            result.normal = adjustedAxis;
+            result.normal = glm::normalize(adjustedAxis);
         }
     }
     // If we get here, there's a collision
