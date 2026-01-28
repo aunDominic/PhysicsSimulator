@@ -1,0 +1,10 @@
+{
+    "FORWARD": "w",
+    "BACKWARD": "s",
+    "LEFT": "a",
+    "RIGHT": "d",
+    "UP": "r",
+    "DOWN": "f",
+    "TOGGLE_CAMERA": "c",
+    "TOGGLE_BODY": "b"
+}
